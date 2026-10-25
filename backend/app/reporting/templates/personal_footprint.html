@@ -1,0 +1,54 @@
+{% extends "base_report.html" %}
+
+{% block content %}
+<h1>Personal Digital Footprint Audit & Remediation Guide</h1>
+<div class="alert-box" style="border-left-color: #10b981; background: #ecfdf5;">
+  <strong>Self-Assessment Scope:</strong> This audit was generated for self-assessment and digital privacy hardening.
+  The findings below represent publicly discoverable identifiers and profile footprints.
+</div>
+
+<h2>Discovered Public Footprint</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="width: 15%;">Finding ID</th>
+      <th style="width: 25%;">Platform / Service</th>
+      <th style="width: 40%;">Exposed Artifact</th>
+      <th style="width: 20%;">Direct Takedown / Setting</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for f in findings %}
+    <tr>
+      <td><span class="citation-tag">[{{ f.id }}]</span></td>
+      <td><strong>{{ f.source }}</strong></td>
+      <td>
+        {{ f.evidence_snippet }}<br>
+        <span style="font-size: 8pt; color: #0284c7;">{{ f.exact_url }}</span>
+      </td>
+      <td>
+        {% if "github" in f.exact_url.lower() %}
+        <a href="https://github.com/settings/profile" style="color: #0284c7; font-weight: 600;">GitHub Privacy Settings</a>
+        {% elif "reddit" in f.exact_url.lower() %}
+        <a href="https://www.reddit.com/settings/privacy" style="color: #0284c7; font-weight: 600;">Reddit Privacy Settings</a>
+        {% elif "x.com" in f.exact_url.lower() or "twitter" in f.exact_url.lower() %}
+        <a href="https://twitter.com/settings/privacy_and_safety" style="color: #0284c7; font-weight: 600;">X Privacy Settings</a>
+        {% elif "linkedin" in f.exact_url.lower() %}
+        <a href="https://www.linkedin.com/psettings/" style="color: #0284c7; font-weight: 600;">LinkedIn Profile Visibility</a>
+        {% else %}
+        <a href="{{ f.exact_url }}" style="color: #0284c7; font-weight: 600;">Account Removal / Takedown</a>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h2>Recommended Remediation Action Plan</h2>
+<ol>
+  <li><strong>Opt-Out of Data Aggregators:</strong> Submit removal requests to public directory brokers.</li>
+  <li><strong>De-index Cached Search Results:</strong> Use Google's Remove Outdated Content Tool and Bing Content Removal.</li>
+  <li><strong>Scrub EXIF Geolocation:</strong> Strip GPS metadata before uploading media to public forums.</li>
+  <li><strong>Purge Dormant Accounts:</strong> Permanently delete accounts on forgotten gaming, forum, and coding platforms.</li>
+</ol>
+{% endblock %}

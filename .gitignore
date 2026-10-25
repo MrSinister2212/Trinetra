@@ -1,0 +1,9 @@
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+dist/
+.pytest_cache/
+trinetra.db
+.env

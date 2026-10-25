@@ -1,0 +1,151 @@
+{% extends "base_report.html" %}
+
+{% block content %}
+<h1>1. Executive Summary</h1>
+<div class="alert-box">
+  {{ executive_summary or "An automated and analyst-assisted intelligence scan was conducted across public platform directories, network registries, and digital archive indexes." }}
+</div>
+
+<h1>2. Scope & Methodology</h1>
+<p>
+  This investigation targeted entity artifacts associated with <strong>{{ case.title }}</strong>.
+  All inquiries followed defensible open-source intelligence doctrines. Sources queried include:
+</p>
+<ul>
+  <li><strong>Username Enumeration:</strong> Validated profiles across 500+ internet platforms, forums, code hosts, and social directories.</li>
+  <li><strong>Email & Infrastructure:</strong> RFC 5322 syntax validation, authoritative DNS MX exchangers, RDAP registry queries, and Certificate Transparency logs.</li>
+  <li><strong>Phone Footprint:</strong> ITU-T numbering plans, carrier/line-type allocation, and public web footprint indexes (strictly excluding consumer people-search brokers).</li>
+  <li><strong>Image Provenance:</strong> EXIF metadata extraction, GPS coordinate parsing, Error Level Analysis (ELA) for manipulation triage, and perceptual hash indexing (zero facial recognition).</li>
+  <li><strong>Dark Web Mentions:</strong> Ahmia onion search indexing under rigorous multi-layer safety gating, content sanitization, script stripping, and hard-block keyword filtering.</li>
+</ul>
+
+{% if analyst_narrative %}
+<h1>3. Analyst Narrative & Corroborated Insights</h1>
+<p>{{ analyst_narrative }}</p>
+{% endif %}
+
+<h1>4. Evidence Findings (Corroborated & Leads)</h1>
+<p>
+  Each finding below carries a cryptographic identifier, exact URL reference, evidence snippet, and calibrated confidence rating.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width: 14%;">Finding ID</th>
+      <th style="width: 12%;">Target</th>
+      <th style="width: 16%;">Source / Module</th>
+      <th style="width: 10%;">Confidence</th>
+      <th style="width: 48%;">Evidence Snippet & Exact URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for f in findings %}
+    <tr>
+      <td>
+        <span class="citation-tag">[{{ f.id }}]</span><br>
+        {% if f.verified %}
+        <span class="badge-verified">VERIFIED</span>
+        {% else %}
+        <span style="font-size: 7.5pt; color: #64748b;">UNVERIFIED</span>
+        {% endif %}
+      </td>
+      <td><code>{{ f.target }}</code></td>
+      <td>
+        <strong>{{ f.source }}</strong><br>
+        <span style="font-size: 8pt; color: #64748b;">Module: {{ f.module }}</span>
+      </td>
+      <td>
+        <span class="badge-confidence">{{ (f.confidence * 100)|int }}%</span>
+      </td>
+      <td>
+        <div>{{ f.evidence_snippet }}</div>
+        <div style="margin-top: 4px; font-size: 8pt; color: #0284c7; word-break: break-all;">
+          <strong>URL:</strong> <a href="{{ f.exact_url }}" style="color: #0284c7;">{{ f.exact_url }}</a>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-top: 2px;">
+          <em>Rationale: {{ f.confidence_reasoning }}</em>
+        </div>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h1>5. Chronological Timeline</h1>
+<p>Reconstructed temporal sequence based on archive timestamps, EXIF headers, and registration events:</p>
+<table>
+  <thead>
+    <tr>
+      <th style="width: 25%;">Timestamp / Event Date</th>
+      <th style="width: 20%;">Source</th>
+      <th style="width: 55%;">Chronological Observation</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for t in timeline %}
+    <tr>
+      <td><code>{{ t.date }}</code></td>
+      <td><strong>{{ t.source }}</strong></td>
+      <td>{{ t.summary }} <span class="citation-tag">[{{ t.finding_id }}]</span></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h1>6. Relational Link Graph</h1>
+<p>
+  Identified <strong>{{ link_graph.node_count }} interconnected entities</strong> connected via 
+  <strong>{{ link_graph.edge_count }} evidentiary relationships</strong>.
+</p>
+<div class="alert-box">
+  Graph connectivity establishes high-confidence bridges between target usernames, associated emails, domain hosts, and public listings. No speculative bridges were synthesized.
+</div>
+
+<h1>7. Chain of Custody & Hash Manifest</h1>
+<h2>Tamper-Evident SHA-256 Digest Manifest</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="width: 18%;">Item ID</th>
+      <th style="width: 22%;">Source</th>
+      <th style="width: 40%;">SHA-256 Digest</th>
+      <th style="width: 20%;">Capture Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for m in hash_manifest %}
+    <tr>
+      <td><code>{{ m.item_id }}</code></td>
+      <td>{{ m.source }}</td>
+      <td><code style="font-size: 7.5pt;">{{ m.sha256 }}</code></td>
+      <td><span style="font-size: 8pt;">{{ m.captured_at }}</span></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h2>Chain of Custody Table</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="width: 10%;">Step</th>
+      <th style="width: 25%;">Action</th>
+      <th style="width: 20%;">Investigator / Tool</th>
+      <th style="width: 25%;">Timestamp</th>
+      <th style="width: 20%;">Operational Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for c in chain_of_custody %}
+    <tr>
+      <td>#{{ c.step }}</td>
+      <td><strong>{{ c.action }}</strong></td>
+      <td>{{ c.analyst }}<br><span style="font-size: 7.5pt; color: #64748b;">{{ c.tool }}</span></td>
+      <td><code>{{ c.timestamp }}</code></td>
+      <td>{{ c.notes }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

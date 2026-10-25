@@ -1,0 +1,26 @@
+{
+  "hard_blocked_categories": [
+    "csam_child_exploitation",
+    "weapons_explosives",
+    "illicit_drug_markets",
+    "hitman_violence_for_hire",
+    "hacking_for_hire_ddos",
+    "stolen_financial_cards_banking",
+    "protected_health_records",
+    "minors_personal_data"
+  ],
+  "keywords": [
+    "child abuse", "csam", "pedophil", "underage sex", "cp links",
+    "glock", "assault rifle", "explosives", "c4", "ammunition store",
+    "fentanyl", "cocaine vendor", "heroin marketplace", "meth shop", "darknet drug market",
+    "hire a hitman", "murder for hire", "contract killer", "acid attack service",
+    "ddos booter", "rat malware for hire", "hire hacker", "carding dump",
+    "cvv dumps", "stolen credit cards", "ssn fullz dump", "stolen bank logs"
+  ],
+  "onion_domains": [
+    "cpcontentexample.onion",
+    "hitmanservicefakemarket.onion",
+    "weapons4uillegalmarket.onion",
+    "darkdrugexpressmarket.onion"
+  ]
+}

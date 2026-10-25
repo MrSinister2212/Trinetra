@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: trinetra-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite+aiosqlite:///./trinetra.db
+      - TOR_SOCKS_PROXY=socks5h://tor:9050
+      - USE_TOR_PROXY=true
+      - SECRET_KEY=trinetra-super-secret-production-grade-osint-key-2026
+    volumes:
+      - trinetra_data:/app/backend/data
+      - ./sample_reports:/app/sample_reports
+    depends_on:
+      - redis
+      - tor
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: trinetra-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: trinetra-redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  tor:
+    image: osminogin/tor-simple:latest
+    container_name: trinetra-tor
+    ports:
+      - "9050:9050"
+    restart: unless-stopped
+
+volumes:
+  trinetra_data:

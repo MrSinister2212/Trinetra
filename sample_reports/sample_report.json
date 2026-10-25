@@ -1,0 +1,601 @@
+{
+  "case": {
+    "id": "CASE-2026-0881",
+    "title": "Comprehensive Digital Footprint & Threat Assessment",
+    "investigator": "Chief OSINT Specialist M. Sharma",
+    "classification": "Confidential",
+    "purpose": "Authorized Digital Footprint Assessment & Identity Corroboration"
+  },
+  "template_type": "technical_report",
+  "generated_at": "2026-10-25 15:53:43 UTC",
+  "analyst": "Chief OSINT Specialist M. Sharma",
+  "executive_summary": "An investigation into target entities confirmed active development presence on GitHub [fnd_usr_01]. Associated social footprint was corroborated on Twitter/X under handle variant alex_devsec [fnd_usr_02]. Domain infrastructure routing was validated via DNS MX exchangers [fnd_eml_01] and Certificate Transparency logs [fnd_eml_02]. Public telecommunication records map the associated inquiry number to a California mobile allocation [fnd_phn_01]. Forensic image evaluation extracted metadata confirming capture via Sony A7 IV [fnd_img_01]. Gated onion indexing noted a single historical text paste mentioning the corporate domain [fnd_drk_01].",
+  "analyst_narrative": "The subject exhibits a high-visibility open-source development profile [fnd_usr_01]. Infrastructure analysis reveals consistent deployment of enterprise security controls including Google Workspace and TLS certificates [fnd_eml_01] [fnd_eml_02]. All findings represent publicly indexable entries gathered under lawful purpose [fnd_usr_01].",
+  "findings": [
+    {
+      "id": "fnd_usr_01",
+      "source": "GitHub",
+      "exact_url": "https://github.com/alex-devsec",
+      "evidence_snippet": "Active public profile with 38 repositories, member of DevSecOps org. Last commit 2 days ago.",
+      "confidence": 0.96,
+      "confidence_reasoning": "Direct profile HTTP 200 with matching bio token.",
+      "timestamp": "2026-10-25T14:10:00Z",
+      "module": "username",
+      "target": "alex-devsec",
+      "category": "Code & Dev",
+      "verified": true,
+      "raw_metadata": {
+        "public_repos": 38,
+        "followers": 112
+      }
+    },
+    {
+      "id": "fnd_usr_02",
+      "source": "Twitter/X",
+      "exact_url": "https://x.com/alex_devsec",
+      "evidence_snippet": "Verified handle claiming Security Researcher role. Pinned thread links to personal portfolio.",
+      "confidence": 0.91,
+      "confidence_reasoning": "Handle exact match on primary social platform.",
+      "timestamp": "2026-10-25T14:11:15Z",
+      "module": "username",
+      "target": "alex_devsec",
+      "category": "Social",
+      "verified": true,
+      "raw_metadata": {
+        "variant_of": "alex-devsec"
+      }
+    },
+    {
+      "id": "fnd_eml_01",
+      "source": "DNS MX Resolver",
+      "exact_url": "dns://alex-security.io/MX",
+      "evidence_snippet": "Mail exchangers resolve to Google Workspace (aspmx.l.google.com). SPF record enforced.",
+      "confidence": 0.99,
+      "confidence_reasoning": "Authoritative DNS MX query confirmed active routing.",
+      "timestamp": "2026-10-25T14:12:00Z",
+      "module": "email_domain",
+      "target": "alex-security.io",
+      "category": "Infrastructure",
+      "verified": true,
+      "raw_metadata": {
+        "priority": 1,
+        "exchange": "aspmx.l.google.com"
+      }
+    },
+    {
+      "id": "fnd_eml_02",
+      "source": "crt.sh Certificate Transparency",
+      "exact_url": "https://api.alex-security.io",
+      "evidence_snippet": "Discovered active subdomain api.alex-security.io logged in Let's Encrypt certificate transparency audit log.",
+      "confidence": 0.95,
+      "confidence_reasoning": "Cryptographic TLS issuance record in global CT log.",
+      "timestamp": "2026-10-25T14:12:30Z",
+      "module": "email_domain",
+      "target": "alex-security.io",
+      "category": "Infrastructure",
+      "verified": true,
+      "raw_metadata": {
+        "subdomain": "api.alex-security.io"
+      }
+    },
+    {
+      "id": "fnd_phn_01",
+      "source": "ITU-T Telecommunication Registry",
+      "exact_url": "tel:+14155552671",
+      "evidence_snippet": "Valid North American mobile number (+1 415-555-2671). Assigned carrier range: T-Mobile USA. Region: San Francisco, California.",
+      "confidence": 0.98,
+      "confidence_reasoning": "Authoritative libphonenumber E.164 syntax and carrier range allocation.",
+      "timestamp": "2026-10-25T14:14:00Z",
+      "module": "phone",
+      "target": "+1 415-555-2671",
+      "category": "Telecom Metadata",
+      "verified": true,
+      "raw_metadata": {
+        "line_type": "Mobile",
+        "carrier": "T-Mobile USA"
+      }
+    },
+    {
+      "id": "fnd_img_01",
+      "source": "EXIF Metadata Extractor",
+      "exact_url": "embedded://media/headshot.jpg",
+      "evidence_snippet": "Camera: Sony A7 IV. Exposure: 1/250s at f/2.8. Captured: 2025-08-14 16:22:10. Software: Lightroom v12.1. GPS coordinates embedded in header: 37.7749, -122.4194.",
+      "confidence": 0.97,
+      "confidence_reasoning": "Parsed direct EXIF tags from supplied artifact.",
+      "timestamp": "2026-10-25T14:16:00Z",
+      "module": "image",
+      "target": "headshot.jpg",
+      "category": "Metadata",
+      "verified": true,
+      "raw_metadata": {
+        "camera": "Sony A7 IV",
+        "gps": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        }
+      }
+    },
+    {
+      "id": "fnd_drk_01",
+      "source": "Ahmia Onion Search Index",
+      "exact_url": "http://pasteonionexample5xyz.onion/raw/alex-sec",
+      "evidence_snippet": "Metadata mention: Public pastebin repository referencing monitored domain alex-security.io. [Scripts stripped, media download blocked]",
+      "confidence": 0.82,
+      "confidence_reasoning": "Indexed public onion search hit referencing monitored domain string.",
+      "timestamp": "2026-10-25T14:18:00Z",
+      "module": "darkweb",
+      "target": "alex-security.io",
+      "category": "Dark Web Mention",
+      "verified": false,
+      "raw_metadata": {
+        "sanitized": true
+      }
+    }
+  ],
+  "verified_findings": [
+    {
+      "id": "fnd_usr_01",
+      "source": "GitHub",
+      "exact_url": "https://github.com/alex-devsec",
+      "evidence_snippet": "Active public profile with 38 repositories, member of DevSecOps org. Last commit 2 days ago.",
+      "confidence": 0.96,
+      "confidence_reasoning": "Direct profile HTTP 200 with matching bio token.",
+      "timestamp": "2026-10-25T14:10:00Z",
+      "module": "username",
+      "target": "alex-devsec",
+      "category": "Code & Dev",
+      "verified": true,
+      "raw_metadata": {
+        "public_repos": 38,
+        "followers": 112
+      }
+    },
+    {
+      "id": "fnd_usr_02",
+      "source": "Twitter/X",
+      "exact_url": "https://x.com/alex_devsec",
+      "evidence_snippet": "Verified handle claiming Security Researcher role. Pinned thread links to personal portfolio.",
+      "confidence": 0.91,
+      "confidence_reasoning": "Handle exact match on primary social platform.",
+      "timestamp": "2026-10-25T14:11:15Z",
+      "module": "username",
+      "target": "alex_devsec",
+      "category": "Social",
+      "verified": true,
+      "raw_metadata": {
+        "variant_of": "alex-devsec"
+      }
+    },
+    {
+      "id": "fnd_eml_01",
+      "source": "DNS MX Resolver",
+      "exact_url": "dns://alex-security.io/MX",
+      "evidence_snippet": "Mail exchangers resolve to Google Workspace (aspmx.l.google.com). SPF record enforced.",
+      "confidence": 0.99,
+      "confidence_reasoning": "Authoritative DNS MX query confirmed active routing.",
+      "timestamp": "2026-10-25T14:12:00Z",
+      "module": "email_domain",
+      "target": "alex-security.io",
+      "category": "Infrastructure",
+      "verified": true,
+      "raw_metadata": {
+        "priority": 1,
+        "exchange": "aspmx.l.google.com"
+      }
+    },
+    {
+      "id": "fnd_eml_02",
+      "source": "crt.sh Certificate Transparency",
+      "exact_url": "https://api.alex-security.io",
+      "evidence_snippet": "Discovered active subdomain api.alex-security.io logged in Let's Encrypt certificate transparency audit log.",
+      "confidence": 0.95,
+      "confidence_reasoning": "Cryptographic TLS issuance record in global CT log.",
+      "timestamp": "2026-10-25T14:12:30Z",
+      "module": "email_domain",
+      "target": "alex-security.io",
+      "category": "Infrastructure",
+      "verified": true,
+      "raw_metadata": {
+        "subdomain": "api.alex-security.io"
+      }
+    },
+    {
+      "id": "fnd_phn_01",
+      "source": "ITU-T Telecommunication Registry",
+      "exact_url": "tel:+14155552671",
+      "evidence_snippet": "Valid North American mobile number (+1 415-555-2671). Assigned carrier range: T-Mobile USA. Region: San Francisco, California.",
+      "confidence": 0.98,
+      "confidence_reasoning": "Authoritative libphonenumber E.164 syntax and carrier range allocation.",
+      "timestamp": "2026-10-25T14:14:00Z",
+      "module": "phone",
+      "target": "+1 415-555-2671",
+      "category": "Telecom Metadata",
+      "verified": true,
+      "raw_metadata": {
+        "line_type": "Mobile",
+        "carrier": "T-Mobile USA"
+      }
+    },
+    {
+      "id": "fnd_img_01",
+      "source": "EXIF Metadata Extractor",
+      "exact_url": "embedded://media/headshot.jpg",
+      "evidence_snippet": "Camera: Sony A7 IV. Exposure: 1/250s at f/2.8. Captured: 2025-08-14 16:22:10. Software: Lightroom v12.1. GPS coordinates embedded in header: 37.7749, -122.4194.",
+      "confidence": 0.97,
+      "confidence_reasoning": "Parsed direct EXIF tags from supplied artifact.",
+      "timestamp": "2026-10-25T14:16:00Z",
+      "module": "image",
+      "target": "headshot.jpg",
+      "category": "Metadata",
+      "verified": true,
+      "raw_metadata": {
+        "camera": "Sony A7 IV",
+        "gps": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        }
+      }
+    }
+  ],
+  "unverified_findings": [
+    {
+      "id": "fnd_drk_01",
+      "source": "Ahmia Onion Search Index",
+      "exact_url": "http://pasteonionexample5xyz.onion/raw/alex-sec",
+      "evidence_snippet": "Metadata mention: Public pastebin repository referencing monitored domain alex-security.io. [Scripts stripped, media download blocked]",
+      "confidence": 0.82,
+      "confidence_reasoning": "Indexed public onion search hit referencing monitored domain string.",
+      "timestamp": "2026-10-25T14:18:00Z",
+      "module": "darkweb",
+      "target": "alex-security.io",
+      "category": "Dark Web Mention",
+      "verified": false,
+      "raw_metadata": {
+        "sanitized": true
+      }
+    }
+  ],
+  "link_graph": {
+    "node_count": 19,
+    "edge_count": 14,
+    "nodes": [
+      {
+        "id": "target:alex-devsec",
+        "label": "alex-devsec",
+        "type": "target",
+        "module": "username"
+      },
+      {
+        "id": "source:GitHub",
+        "label": "GitHub",
+        "type": "source",
+        "module": null
+      },
+      {
+        "id": "url:https://github.com/alex-devsec",
+        "label": "https://github.com/alex-devsec...",
+        "type": "url",
+        "module": null
+      },
+      {
+        "id": "target:alex_devsec",
+        "label": "alex_devsec",
+        "type": "target",
+        "module": "username"
+      },
+      {
+        "id": "source:Twitter/X",
+        "label": "Twitter/X",
+        "type": "source",
+        "module": null
+      },
+      {
+        "id": "url:https://x.com/alex_devsec",
+        "label": "https://x.com/alex_devsec...",
+        "type": "url",
+        "module": null
+      },
+      {
+        "id": "target:alex-security.io",
+        "label": "alex-security.io",
+        "type": "target",
+        "module": "darkweb"
+      },
+      {
+        "id": "source:DNS MX Resolver",
+        "label": "DNS MX Resolver",
+        "type": "source",
+        "module": null
+      },
+      {
+        "id": "url:dns://alex-security.io/MX",
+        "label": "dns://alex-security.io/MX...",
+        "type": "url",
+        "module": null
+      },
+      {
+        "id": "source:crt.sh Certificate Transparency",
+        "label": "crt.sh Certificate Transparency",
+        "type": "source",
+        "module": null
+      },
+      {
+        "id": "url:https://api.alex-security.io",
+        "label": "https://api.alex-security.io...",
+        "type": "url",
+        "module": null
+      },
+      {
+        "id": "target:+1 415-555-2671",
+        "label": "+1 415-555-2671",
+        "type": "target",
+        "module": "phone"
+      },
+      {
+        "id": "source:ITU-T Telecommunication Registry",
+        "label": "ITU-T Telecommunication Registry",
+        "type": "source",
+        "module": null
+      },
+      {
+        "id": "url:tel:+14155552671",
+        "label": "tel:+14155552671...",
+        "type": "url",
+        "module": null
+      },
+      {
+        "id": "target:headshot.jpg",
+        "label": "headshot.jpg",
+        "type": "target",
+        "module": "image"
+      },
+      {
+        "id": "source:EXIF Metadata Extractor",
+        "label": "EXIF Metadata Extractor",
+        "type": "source",
+        "module": null
+      },
+      {
+        "id": "url:embedded://media/headshot.jpg",
+        "label": "embedded://media/headshot.jpg...",
+        "type": "url",
+        "module": null
+      },
+      {
+        "id": "source:Ahmia Onion Search Index",
+        "label": "Ahmia Onion Search Index",
+        "type": "source",
+        "module": null
+      },
+      {
+        "id": "url:http://pasteonionexample5xyz.onion/raw/alex-sec",
+        "label": "http://pasteonionexample5xyz.onion/raw/a...",
+        "type": "url",
+        "module": null
+      }
+    ],
+    "links": [
+      {
+        "source": "target:alex-devsec",
+        "target": "source:GitHub",
+        "label": "Registered Profile",
+        "confidence": 0.96
+      },
+      {
+        "source": "source:GitHub",
+        "target": "url:https://github.com/alex-devsec",
+        "label": "Exact URL Endpoint",
+        "confidence": 0.5
+      },
+      {
+        "source": "target:alex_devsec",
+        "target": "source:Twitter/X",
+        "label": "Registered Profile",
+        "confidence": 0.91
+      },
+      {
+        "source": "source:Twitter/X",
+        "target": "url:https://x.com/alex_devsec",
+        "label": "Exact URL Endpoint",
+        "confidence": 0.5
+      },
+      {
+        "source": "target:alex-security.io",
+        "target": "source:DNS MX Resolver",
+        "label": "Infrastructure / Breach",
+        "confidence": 0.99
+      },
+      {
+        "source": "target:alex-security.io",
+        "target": "source:crt.sh Certificate Transparency",
+        "label": "Infrastructure / Breach",
+        "confidence": 0.95
+      },
+      {
+        "source": "target:alex-security.io",
+        "target": "source:Ahmia Onion Search Index",
+        "label": "Evidence (Dark Web Mention)",
+        "confidence": 0.82
+      },
+      {
+        "source": "source:DNS MX Resolver",
+        "target": "url:dns://alex-security.io/MX",
+        "label": "Exact URL Endpoint",
+        "confidence": 0.5
+      },
+      {
+        "source": "source:crt.sh Certificate Transparency",
+        "target": "url:https://api.alex-security.io",
+        "label": "Exact URL Endpoint",
+        "confidence": 0.5
+      },
+      {
+        "source": "target:+1 415-555-2671",
+        "target": "source:ITU-T Telecommunication Registry",
+        "label": "Telecom / Listing",
+        "confidence": 0.98
+      },
+      {
+        "source": "source:ITU-T Telecommunication Registry",
+        "target": "url:tel:+14155552671",
+        "label": "Exact URL Endpoint",
+        "confidence": 0.5
+      },
+      {
+        "source": "target:headshot.jpg",
+        "target": "source:EXIF Metadata Extractor",
+        "label": "Provenance / Metadata",
+        "confidence": 0.97
+      },
+      {
+        "source": "source:EXIF Metadata Extractor",
+        "target": "url:embedded://media/headshot.jpg",
+        "label": "Exact URL Endpoint",
+        "confidence": 0.5
+      },
+      {
+        "source": "source:Ahmia Onion Search Index",
+        "target": "url:http://pasteonionexample5xyz.onion/raw/alex-sec",
+        "label": "Exact URL Endpoint",
+        "confidence": 0.5
+      }
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026-10-25T14:10:00Z",
+      "finding_id": "fnd_usr_01",
+      "source": "GitHub",
+      "target": "alex-devsec",
+      "summary": "Active public profile with 38 repositories, member of DevSecOps org. Last commit 2 days ago....",
+      "confidence": 0.96
+    },
+    {
+      "date": "2026-10-25T14:11:15Z",
+      "finding_id": "fnd_usr_02",
+      "source": "Twitter/X",
+      "target": "alex_devsec",
+      "summary": "Verified handle claiming Security Researcher role. Pinned thread links to personal portfolio....",
+      "confidence": 0.91
+    },
+    {
+      "date": "2026-10-25T14:12:00Z",
+      "finding_id": "fnd_eml_01",
+      "source": "DNS MX Resolver",
+      "target": "alex-security.io",
+      "summary": "Mail exchangers resolve to Google Workspace (aspmx.l.google.com). SPF record enforced....",
+      "confidence": 0.99
+    },
+    {
+      "date": "2026-10-25T14:12:30Z",
+      "finding_id": "fnd_eml_02",
+      "source": "crt.sh Certificate Transparency",
+      "target": "alex-security.io",
+      "summary": "Discovered active subdomain api.alex-security.io logged in Let's Encrypt certificate transparency audit log....",
+      "confidence": 0.95
+    },
+    {
+      "date": "2026-10-25T14:14:00Z",
+      "finding_id": "fnd_phn_01",
+      "source": "ITU-T Telecommunication Registry",
+      "target": "+1 415-555-2671",
+      "summary": "Valid North American mobile number (+1 415-555-2671). Assigned carrier range: T-Mobile USA. Region: San Francisco, Calif...",
+      "confidence": 0.98
+    },
+    {
+      "date": "2026-10-25T14:16:00Z",
+      "finding_id": "fnd_img_01",
+      "source": "EXIF Metadata Extractor",
+      "target": "headshot.jpg",
+      "summary": "Camera: Sony A7 IV. Exposure: 1/250s at f/2.8. Captured: 2025-08-14 16:22:10. Software: Lightroom v12.1. GPS coordinates...",
+      "confidence": 0.97
+    },
+    {
+      "date": "2026-10-25T14:18:00Z",
+      "finding_id": "fnd_drk_01",
+      "source": "Ahmia Onion Search Index",
+      "target": "alex-security.io",
+      "summary": "Metadata mention: Public pastebin repository referencing monitored domain alex-security.io. [Scripts stripped, media dow...",
+      "confidence": 0.82
+    }
+  ],
+  "hash_manifest": [
+    {
+      "item_id": "fnd_usr_01",
+      "item_type": "finding_evidence",
+      "source": "GitHub",
+      "sha256": "720a917c4d71b99049e33a0453253d25dee043917cf77c983e453a2162bcb758",
+      "captured_at": "2026-10-25T14:10:00Z"
+    },
+    {
+      "item_id": "fnd_usr_02",
+      "item_type": "finding_evidence",
+      "source": "Twitter/X",
+      "sha256": "f9f6313b9c18ca3221f1afc378295845d662bfa64fd6a31cf7ae7fc973b851dc",
+      "captured_at": "2026-10-25T14:11:15Z"
+    },
+    {
+      "item_id": "fnd_eml_01",
+      "item_type": "finding_evidence",
+      "source": "DNS MX Resolver",
+      "sha256": "cd2eba3254568b71aacf65f7c250b010fa13f34e80d711e9f41896ff0ac7e390",
+      "captured_at": "2026-10-25T14:12:00Z"
+    },
+    {
+      "item_id": "fnd_eml_02",
+      "item_type": "finding_evidence",
+      "source": "crt.sh Certificate Transparency",
+      "sha256": "95a907fbb25e26fb04e0953416313267c4191bcc6fdc4ac16be23ce792e6893e",
+      "captured_at": "2026-10-25T14:12:30Z"
+    },
+    {
+      "item_id": "fnd_phn_01",
+      "item_type": "finding_evidence",
+      "source": "ITU-T Telecommunication Registry",
+      "sha256": "5983ab70fee6884cd8015fd07060670f1a54f416eb324e83d4c9f657b0965e7c",
+      "captured_at": "2026-10-25T14:14:00Z"
+    },
+    {
+      "item_id": "fnd_img_01",
+      "item_type": "finding_evidence",
+      "source": "EXIF Metadata Extractor",
+      "sha256": "e11e9361ad96733a6b0c8c070533cf6979ce5903da8f28765fe9ad9008a17cb0",
+      "captured_at": "2026-10-25T14:16:00Z"
+    },
+    {
+      "item_id": "fnd_drk_01",
+      "item_type": "finding_evidence",
+      "source": "Ahmia Onion Search Index",
+      "sha256": "8d1b78b7505b5a3099c3ad1a83215a2b79e4f6df6b640ba35340b336b96e1435",
+      "captured_at": "2026-10-25T14:18:00Z"
+    }
+  ],
+  "chain_of_custody": [
+    {
+      "step": 1,
+      "action": "OSINT Target Ingestion",
+      "analyst": "Chief OSINT Specialist M. Sharma",
+      "tool": "TRINETRA v1.0.0",
+      "timestamp": "2026-10-25T15:53:43.204846+00:00",
+      "notes": "Ingested queries and verified lawful investigative purpose for Case CASE-2026-0881."
+    },
+    {
+      "step": 2,
+      "action": "Evidence Capture & Cryptographic Hashing",
+      "analyst": "Chief OSINT Specialist M. Sharma",
+      "tool": "TRINETRA v1.0.0 - Integrity Engine",
+      "timestamp": "2026-10-25T15:53:43.204846+00:00",
+      "notes": "Captured 7 finding artifacts with immutable SHA-256 validation."
+    },
+    {
+      "step": 3,
+      "action": "Investigation Report Compilation",
+      "analyst": "Chief OSINT Specialist M. Sharma",
+      "tool": "TRINETRA v1.0.0 - Report Builder",
+      "timestamp": "2026-10-25T15:53:43.204846+00:00",
+      "notes": "Generated defensible report package with redaction and citation validation."
+    }
+  ],
+  "redaction_applied": false,
+  "app_version": "1.0.0"
+}

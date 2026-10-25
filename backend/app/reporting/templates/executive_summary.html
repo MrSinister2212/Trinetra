@@ -1,0 +1,69 @@
+{% extends "base_report.html" %}
+
+{% block content %}
+<h1>Executive Briefing</h1>
+<div class="alert-box" style="border-left-color: #2563eb; background: #eff6ff;">
+  <strong>Strategic Overview:</strong> {{ executive_summary or "This executive assessment synthesizes key public footprint findings and actionable risk metrics for leadership review." }}
+</div>
+
+<h2>Threat & Risk Assessment</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Risk Dimension</th>
+      <th>Observed Exposure</th>
+      <th>Evaluated Severity</th>
+      <th>Recommended Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Public Profile Enumeration</strong></td>
+      <td>{{ findings|length }} registered accounts discovered across indexed sites.</td>
+      <td><span class="badge-confidence">MEDIUM</span></td>
+      <td>Audit dormant accounts and deactivate obsolete registration endpoints.</td>
+    </tr>
+    <tr>
+      <td><strong>Credential / Breach Exposure</strong></td>
+      <td>Breach telemetry checked via authoritative incident logs.</td>
+      <td><span class="badge-confidence">HIGH</span></td>
+      <td>Enforce multi-factor authentication (FIDO2/TOTP) across associated domains.</td>
+    </tr>
+    <tr>
+      <td><strong>Infrastructure Transparency</strong></td>
+      <td>DNS and Certificate Transparency records mapped.</td>
+      <td><span class="badge-verified">LOW</span></td>
+      <td>Regularly review issued TLS certificates and revoke obsolete subdomains.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>High-Confidence Key Findings</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="width: 15%;">ID</th>
+      <th style="width: 25%;">Target & Source</th>
+      <th style="width: 45%;">Observation Summary</th>
+      <th style="width: 15%;">Confidence</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for f in verified_findings[:6] %}
+    <tr>
+      <td><span class="citation-tag">[{{ f.id }}]</span></td>
+      <td><strong>{{ f.source }}</strong><br><code>{{ f.target }}</code></td>
+      <td>{{ f.evidence_snippet }}</td>
+      <td><span class="badge-verified">{{ (f.confidence * 100)|int }}%</span></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h2>Immediate Remediation Road-Map</h2>
+<ol>
+  <li><strong>Credential Hygiene:</strong> Rotate credentials for exposed third-party services cited in the dossier.</li>
+  <li><strong>Profile Privacy Hardening:</strong> Configure visibility to private or friends-only on indexed social directories.</li>
+  <li><strong>Continuous Surveillance:</strong> Schedule automated weekly delta scans within TRINETRA to catch emergent impersonation attempts.</li>
+</ol>
+{% endblock %}

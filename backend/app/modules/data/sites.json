@@ -1,0 +1,6896 @@
+[
+  {
+    "name": "GitHub",
+    "category": "Code & Dev",
+    "url": "https://github.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 1
+  },
+  {
+    "name": "GitLab",
+    "category": "Code & Dev",
+    "url": "https://gitlab.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 2
+  },
+  {
+    "name": "Bitbucket",
+    "category": "Code & Dev",
+    "url": "https://bitbucket.org/{}/",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 3
+  },
+  {
+    "name": "Twitter/X",
+    "category": "Social",
+    "url": "https://x.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 1
+  },
+  {
+    "name": "Reddit",
+    "category": "Social",
+    "url": "https://www.reddit.com/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 1
+  },
+  {
+    "name": "Instagram",
+    "category": "Social",
+    "url": "https://www.instagram.com/{}/",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 1
+  },
+  {
+    "name": "TikTok",
+    "category": "Social",
+    "url": "https://www.tiktok.com/@{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 2
+  },
+  {
+    "name": "YouTube",
+    "category": "Audio & Video",
+    "url": "https://www.youtube.com/@{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 2
+  },
+  {
+    "name": "LinkedIn",
+    "category": "Professional",
+    "url": "https://www.linkedin.com/in/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 2
+  },
+  {
+    "name": "Pinterest",
+    "category": "Social",
+    "url": "https://www.pinterest.com/{}/",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 3
+  },
+  {
+    "name": "Medium",
+    "category": "Publishing",
+    "url": "https://medium.com/@{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 3
+  },
+  {
+    "name": "Dev.to",
+    "category": "Code & Dev",
+    "url": "https://dev.to/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 4
+  },
+  {
+    "name": "Steam",
+    "category": "Gaming",
+    "url": "https://steamcommunity.com/id/{}",
+    "check_type": "message",
+    "error_code": 200,
+    "error_message": "The specified profile could not be found",
+    "rank": 3
+  },
+  {
+    "name": "Twitch",
+    "category": "Audio & Video",
+    "url": "https://www.twitch.tv/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 3
+  },
+  {
+    "name": "Spotify",
+    "category": "Audio & Video",
+    "url": "https://open.spotify.com/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 4
+  },
+  {
+    "name": "SoundCloud",
+    "category": "Audio & Video",
+    "url": "https://soundcloud.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 4
+  },
+  {
+    "name": "Telegram",
+    "category": "Social",
+    "url": "https://t.me/{}",
+    "check_type": "message",
+    "error_code": 200,
+    "error_message": "tgme_page_action",
+    "rank": 3
+  },
+  {
+    "name": "Keybase",
+    "category": "Security & Tech",
+    "url": "https://keybase.io/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 4
+  },
+  {
+    "name": "DockerHub",
+    "category": "Code & Dev",
+    "url": "https://hub.docker.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 5
+  },
+  {
+    "name": "PyPI",
+    "category": "Code & Dev",
+    "url": "https://pypi.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 5
+  },
+  {
+    "name": "NPM",
+    "category": "Code & Dev",
+    "url": "https://www.npmjs.com/~{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 5
+  },
+  {
+    "name": "HackerNews",
+    "category": "Tech Community",
+    "url": "https://news.ycombinator.com/user?id={}",
+    "check_type": "message",
+    "error_code": 200,
+    "error_message": "No such user",
+    "rank": 4
+  },
+  {
+    "name": "Kaggle",
+    "category": "Data Science",
+    "url": "https://www.kaggle.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 5
+  },
+  {
+    "name": "CodePen",
+    "category": "Code & Dev",
+    "url": "https://codepen.io/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 6
+  },
+  {
+    "name": "Replit",
+    "category": "Code & Dev",
+    "url": "https://replit.com/@{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 6
+  },
+  {
+    "name": "SourceForge",
+    "category": "Code & Dev",
+    "url": "https://sourceforge.net/u/{}/profile/",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Codeberg",
+    "category": "Code & Dev",
+    "url": "https://codeberg.org/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "HuggingFace",
+    "category": "Code & Dev",
+    "url": "https://huggingface.co/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "LeetCode",
+    "category": "Code & Dev",
+    "url": "https://leetcode.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "HackerRank",
+    "category": "Code & Dev",
+    "url": "https://www.hackerrank.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Codeforces",
+    "category": "Code & Dev",
+    "url": "https://codeforces.com/profile/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "TopCoder",
+    "category": "Code & Dev",
+    "url": "https://www.topcoder.com/members/{}/",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "StackOverflow",
+    "category": "Code & Dev",
+    "url": "https://stackoverflow.com/users/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Packagist",
+    "category": "Code & Dev",
+    "url": "https://packagist.org/users/{}/",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "RubyGems",
+    "category": "Code & Dev",
+    "url": "https://rubygems.org/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Crates.io",
+    "category": "Code & Dev",
+    "url": "https://crates.io/users/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Glitch",
+    "category": "Code & Dev",
+    "url": "https://glitch.com/@{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "JSFiddle",
+    "category": "Code & Dev",
+    "url": "https://jsfiddle.net/user/{}/",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "ObservableHQ",
+    "category": "Code & Dev",
+    "url": "https://observablehq.com/@{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Hashnode",
+    "category": "Code & Dev",
+    "url": "https://hashnode.com/@{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "GitBook",
+    "category": "Code & Dev",
+    "url": "https://{}.gitbook.io",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Gist",
+    "category": "Code & Dev",
+    "url": "https://gist.github.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "GreasyFork",
+    "category": "Code & Dev",
+    "url": "https://greasyfork.org/en/users/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "OpenHub",
+    "category": "Code & Dev",
+    "url": "https://www.openhub.net/accounts/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Devpost",
+    "category": "Code & Dev",
+    "url": "https://devpost.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "CodersRank",
+    "category": "Code & Dev",
+    "url": "https://profile.codersrank.io/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "WakaTime",
+    "category": "Code & Dev",
+    "url": "https://wakatime.com/@{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "AskUbuntu",
+    "category": "Code & Dev",
+    "url": "https://askubuntu.com/users/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "ServerFault",
+    "category": "Code & Dev",
+    "url": "https://serverfault.com/users/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "SuperUser",
+    "category": "Code & Dev",
+    "url": "https://superuser.com/users/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Launchpad",
+    "category": "Code & Dev",
+    "url": "https://launchpad.net/~{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Vercel",
+    "category": "Code & Dev",
+    "url": "https://vercel.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Netlify",
+    "category": "Code & Dev",
+    "url": "https://app.netlify.com/teams/{}/overview",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Tumblr",
+    "category": "Social",
+    "url": "https://{}.tumblr.com",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Flickr",
+    "category": "Social",
+    "url": "https://www.flickr.com/people/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Mastodon Social",
+    "category": "Social",
+    "url": "https://mastodon.social/@{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Bluesky",
+    "category": "Social",
+    "url": "https://bsky.app/profile/{}.bsky.social",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Threads",
+    "category": "Social",
+    "url": "https://www.threads.net/@{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "VK",
+    "category": "Social",
+    "url": "https://vk.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Weibo",
+    "category": "Social",
+    "url": "https://weibo.com/n/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "OK.ru",
+    "category": "Social",
+    "url": "https://ok.ru/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Disqus",
+    "category": "Social",
+    "url": "https://disqus.com/by/{}/",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Quora",
+    "category": "Social",
+    "url": "https://www.quora.com/profile/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "AskFM",
+    "category": "Social",
+    "url": "https://ask.fm/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Tellonym",
+    "category": "Social",
+    "url": "https://tellonym.me/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Myspace",
+    "category": "Social",
+    "url": "https://myspace.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Linktree",
+    "category": "Social",
+    "url": "https://linktr.ee/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Carrd",
+    "category": "Social",
+    "url": "https://{}.carrd.co",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "BioLink",
+    "category": "Social",
+    "url": "https://bio.link/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Bento",
+    "category": "Social",
+    "url": "https://bento.me/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Gravatar",
+    "category": "Social",
+    "url": "https://en.gravatar.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "About.me",
+    "category": "Social",
+    "url": "https://about.me/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Beacons",
+    "category": "Social",
+    "url": "https://beacons.ai/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "AllMyLinks",
+    "category": "Social",
+    "url": "https://allmylinks.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Snapchat",
+    "category": "Social",
+    "url": "https://www.snapchat.com/add/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Clubhouse",
+    "category": "Social",
+    "url": "https://www.clubhouse.com/@{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "itch.io",
+    "category": "Gaming",
+    "url": "https://{}.itch.io",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Roblox",
+    "category": "Gaming",
+    "url": "https://www.roblox.com/user.aspx?username={}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "NexusMods",
+    "category": "Gaming",
+    "url": "https://www.nexusmods.com/users/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Speedrun.com",
+    "category": "Gaming",
+    "url": "https://www.speedrun.com/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Chess.com",
+    "category": "Gaming",
+    "url": "https://www.chess.com/member/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Lichess",
+    "category": "Gaming",
+    "url": "https://lichess.org/@/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "GOG",
+    "category": "Gaming",
+    "url": "https://www.gog.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Battle.net",
+    "category": "Gaming",
+    "url": "https://overwatch.blizzard.com/en-us/career/{}/",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Tracker.gg",
+    "category": "Gaming",
+    "url": "https://tracker.gg/profile/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Faceit",
+    "category": "Gaming",
+    "url": "https://www.faceit.com/en/players/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "ModDB",
+    "category": "Gaming",
+    "url": "https://www.moddb.com/members/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "GameJolt",
+    "category": "Gaming",
+    "url": "https://gamejolt.com/@{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "RetroAchievements",
+    "category": "Gaming",
+    "url": "https://retroachievements.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Kongregate",
+    "category": "Gaming",
+    "url": "https://www.kongregate.com/accounts/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Newgrounds",
+    "category": "Gaming",
+    "url": "https://{}.newgrounds.com",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "ArmorGames",
+    "category": "Gaming",
+    "url": "https://armorgames.com/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "osu!",
+    "category": "Gaming",
+    "url": "https://osu.ppy.sh/users/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Behance",
+    "category": "Creative & Design",
+    "url": "https://www.behance.net/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Dribbble",
+    "category": "Creative & Design",
+    "url": "https://dribbble.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "ArtStation",
+    "category": "Creative & Design",
+    "url": "https://www.artstation.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "DeviantArt",
+    "category": "Creative & Design",
+    "url": "https://www.deviantart.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "500px",
+    "category": "Creative & Design",
+    "url": "https://500px.com/p/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Unsplash",
+    "category": "Creative & Design",
+    "url": "https://unsplash.com/@{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "VSCO",
+    "category": "Creative & Design",
+    "url": "https://vsco.co/{}/gallery",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Carbonmade",
+    "category": "Creative & Design",
+    "url": "https://{}.carbonmade.com",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Coroflot",
+    "category": "Creative & Design",
+    "url": "https://www.coroflot.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Adobe Portfolio",
+    "category": "Creative & Design",
+    "url": "https://{}.myportfolio.com",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Vsco",
+    "category": "Creative & Design",
+    "url": "https://vsco.co/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Renderosity",
+    "category": "Creative & Design",
+    "url": "https://www.renderosity.com/users/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Sketchfab",
+    "category": "Creative & Design",
+    "url": "https://sketchfab.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Vimeo",
+    "category": "Audio & Video",
+    "url": "https://vimeo.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Dailymotion",
+    "category": "Audio & Video",
+    "url": "https://www.dailymotion.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Bandcamp",
+    "category": "Audio & Video",
+    "url": "https://bandcamp.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Mixcloud",
+    "category": "Audio & Video",
+    "url": "https://www.mixcloud.com/{}/",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Last.fm",
+    "category": "Audio & Video",
+    "url": "https://www.last.fm/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Audiomack",
+    "category": "Audio & Video",
+    "url": "https://audiomack.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Deezer",
+    "category": "Audio & Video",
+    "url": "https://www.deezer.com/en/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "ReverbNation",
+    "category": "Audio & Video",
+    "url": "https://www.reverbnation.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Rumble",
+    "category": "Audio & Video",
+    "url": "https://rumble.com/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Odysee",
+    "category": "Audio & Video",
+    "url": "https://odysee.com/@{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Bitchute",
+    "category": "Audio & Video",
+    "url": "https://www.bitchute.com/channel/{}/",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Substack",
+    "category": "Publishing & Books",
+    "url": "https://{}.substack.com",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "WordPress",
+    "category": "Publishing & Books",
+    "url": "https://{}.wordpress.com",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Blogger",
+    "category": "Publishing & Books",
+    "url": "https://{}.blogspot.com",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Ghost",
+    "category": "Publishing & Books",
+    "url": "https://{}.ghost.io",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Wattpad",
+    "category": "Publishing & Books",
+    "url": "https://www.wattpad.com/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Goodreads",
+    "category": "Publishing & Books",
+    "url": "https://www.goodreads.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Letterboxd",
+    "category": "Publishing & Books",
+    "url": "https://letterboxd.com/{}/",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "LiveJournal",
+    "category": "Publishing & Books",
+    "url": "https://{}.livejournal.com",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Scribd",
+    "category": "Publishing & Books",
+    "url": "https://www.scribd.com/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Archive.org",
+    "category": "Publishing & Books",
+    "url": "https://archive.org/details/@{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "SlideShare",
+    "category": "Publishing & Books",
+    "url": "https://www.slideshare.net/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "SpeakerDeck",
+    "category": "Publishing & Books",
+    "url": "https://speakerdeck.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Notion Site",
+    "category": "Publishing & Books",
+    "url": "https://{}.notion.site",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Patreon",
+    "category": "Commerce & Monetization",
+    "url": "https://www.patreon.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "BuyMeACoffee",
+    "category": "Commerce & Monetization",
+    "url": "https://www.buymeacoffee.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Ko-fi",
+    "category": "Commerce & Monetization",
+    "url": "https://ko-fi.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Gumroad",
+    "category": "Commerce & Monetization",
+    "url": "https://{}.gumroad.com",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Etsy",
+    "category": "Commerce & Monetization",
+    "url": "https://www.etsy.com/shop/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "eBay",
+    "category": "Commerce & Monetization",
+    "url": "https://www.ebay.com/usr/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Fiverr",
+    "category": "Commerce & Monetization",
+    "url": "https://www.fiverr.com/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Upwork",
+    "category": "Commerce & Monetization",
+    "url": "https://www.upwork.com/freelancers/~{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Freelancer",
+    "category": "Commerce & Monetization",
+    "url": "https://www.freelancer.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Kickstarter",
+    "category": "Commerce & Monetization",
+    "url": "https://www.kickstarter.com/profile/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Indiegogo",
+    "category": "Commerce & Monetization",
+    "url": "https://www.indiegogo.com/individuals/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "ProductHunt",
+    "category": "Commerce & Monetization",
+    "url": "https://www.producthunt.com/@{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Lobste.rs",
+    "category": "Forums & Community",
+    "url": "https://lobste.rs/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "XDA Developers",
+    "category": "Forums & Community",
+    "url": "https://forum.xda-developers.com/m/{}/",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Spiceworks",
+    "category": "Forums & Community",
+    "url": "https://community.spiceworks.com/people/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "BleepingComputer",
+    "category": "Forums & Community",
+    "url": "https://www.bleepingcomputer.com/forums/user/{}/",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Overclockers",
+    "category": "Forums & Community",
+    "url": "https://www.overclock.net/members/{}/",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "MyAnimeList",
+    "category": "Forums & Community",
+    "url": "https://myanimelist.net/profile/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "AniList",
+    "category": "Forums & Community",
+    "url": "https://anilist.co/user/{}/",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Kitsu",
+    "category": "Forums & Community",
+    "url": "https://kitsu.app/users/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Trakt",
+    "category": "Forums & Community",
+    "url": "https://trakt.tv/users/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Duolingo",
+    "category": "Forums & Community",
+    "url": "https://www.duolingo.com/profile/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Instructables",
+    "category": "Forums & Community",
+    "url": "https://www.instructables.com/member/{}/",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "TripAdvisor",
+    "category": "Forums & Community",
+    "url": "https://www.tripadvisor.com/Profile/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "AllTrails",
+    "category": "Forums & Community",
+    "url": "https://www.alltrails.com/members/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Strava",
+    "category": "Forums & Community",
+    "url": "https://www.strava.com/athletes/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Fitbit",
+    "category": "Forums & Community",
+    "url": "https://www.fitbit.com/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 20
+  },
+  {
+    "name": "Rust-lang Community",
+    "category": "Community & Niche",
+    "url": "https://rust-lang.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Rust-lang Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.rust-lang.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Rust-lang Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.rust-lang.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Python Community",
+    "category": "Community & Niche",
+    "url": "https://python.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Python Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.python.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Python Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.python.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Golang Community",
+    "category": "Community & Niche",
+    "url": "https://golang.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Golang Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.golang.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Golang Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.golang.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Elixir Community",
+    "category": "Community & Niche",
+    "url": "https://elixir.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Elixir Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.elixir.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Elixir Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.elixir.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Clojure Community",
+    "category": "Community & Niche",
+    "url": "https://clojure.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Clojure Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.clojure.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Clojure Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.clojure.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Kotlin Community",
+    "category": "Community & Niche",
+    "url": "https://kotlin.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Kotlin Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.kotlin.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Kotlin Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.kotlin.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Swift Community",
+    "category": "Community & Niche",
+    "url": "https://swift.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Swift Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.swift.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Swift Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.swift.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Haskell Community",
+    "category": "Community & Niche",
+    "url": "https://haskell.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Haskell Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.haskell.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Haskell Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.haskell.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Scala Community",
+    "category": "Community & Niche",
+    "url": "https://scala.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Scala Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.scala.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Scala Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.scala.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Julia Community",
+    "category": "Community & Niche",
+    "url": "https://julia.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Julia Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.julia.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Julia Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.julia.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Zig Community",
+    "category": "Community & Niche",
+    "url": "https://zig.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Zig Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.zig.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Zig Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.zig.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Nim Community",
+    "category": "Community & Niche",
+    "url": "https://nim.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Nim Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.nim.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Nim Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.nim.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Lua Community",
+    "category": "Community & Niche",
+    "url": "https://lua.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Lua Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.lua.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Lua Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.lua.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "R-project Community",
+    "category": "Community & Niche",
+    "url": "https://r-project.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "R-project Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.r-project.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "R-project Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.r-project.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Perl Community",
+    "category": "Community & Niche",
+    "url": "https://perl.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Perl Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.perl.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Perl Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.perl.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Erlang Community",
+    "category": "Community & Niche",
+    "url": "https://erlang.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Erlang Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.erlang.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Erlang Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.erlang.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Dart Community",
+    "category": "Community & Niche",
+    "url": "https://dart.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Dart Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.dart.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Dart Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.dart.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Flutter Community",
+    "category": "Community & Niche",
+    "url": "https://flutter.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Flutter Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.flutter.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Flutter Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.flutter.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Reactjs Community",
+    "category": "Community & Niche",
+    "url": "https://reactjs.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Reactjs Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.reactjs.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Reactjs Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.reactjs.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Vuejs Community",
+    "category": "Community & Niche",
+    "url": "https://vuejs.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Vuejs Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.vuejs.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Vuejs Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.vuejs.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Angular Community",
+    "category": "Community & Niche",
+    "url": "https://angular.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Angular Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.angular.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Angular Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.angular.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Svelte Community",
+    "category": "Community & Niche",
+    "url": "https://svelte.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Svelte Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.svelte.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Svelte Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.svelte.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Nextjs Community",
+    "category": "Community & Niche",
+    "url": "https://nextjs.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Nextjs Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.nextjs.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Nextjs Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.nextjs.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Astro Community",
+    "category": "Community & Niche",
+    "url": "https://astro.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Astro Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.astro.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Astro Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.astro.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Tailwind Community",
+    "category": "Community & Niche",
+    "url": "https://tailwind.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Tailwind Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.tailwind.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Tailwind Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.tailwind.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Deno Community",
+    "category": "Community & Niche",
+    "url": "https://deno.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Deno Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.deno.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Deno Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.deno.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Bun Community",
+    "category": "Community & Niche",
+    "url": "https://bun.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Bun Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.bun.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Bun Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.bun.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Docker Community",
+    "category": "Community & Niche",
+    "url": "https://docker.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Docker Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.docker.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Docker Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.docker.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Kubernetes Community",
+    "category": "Community & Niche",
+    "url": "https://kubernetes.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Kubernetes Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.kubernetes.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Kubernetes Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.kubernetes.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Ansible Community",
+    "category": "Community & Niche",
+    "url": "https://ansible.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Ansible Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.ansible.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Ansible Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.ansible.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Terraform Community",
+    "category": "Community & Niche",
+    "url": "https://terraform.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Terraform Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.terraform.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Terraform Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.terraform.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Hashicorp Community",
+    "category": "Community & Niche",
+    "url": "https://hashicorp.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Hashicorp Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.hashicorp.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Hashicorp Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.hashicorp.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Grafana Community",
+    "category": "Community & Niche",
+    "url": "https://grafana.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Grafana Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.grafana.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Grafana Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.grafana.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Prometheus Community",
+    "category": "Community & Niche",
+    "url": "https://prometheus.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Prometheus Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.prometheus.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Prometheus Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.prometheus.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Elastic Community",
+    "category": "Community & Niche",
+    "url": "https://elastic.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Elastic Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.elastic.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Elastic Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.elastic.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Mongodb Community",
+    "category": "Community & Niche",
+    "url": "https://mongodb.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Mongodb Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.mongodb.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Mongodb Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.mongodb.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Postgresql Community",
+    "category": "Community & Niche",
+    "url": "https://postgresql.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Postgresql Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.postgresql.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Postgresql Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.postgresql.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Mysql Community",
+    "category": "Community & Niche",
+    "url": "https://mysql.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Mysql Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.mysql.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Mysql Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.mysql.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Redis Community",
+    "category": "Community & Niche",
+    "url": "https://redis.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Redis Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.redis.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Redis Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.redis.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Apache Community",
+    "category": "Community & Niche",
+    "url": "https://apache.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Apache Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.apache.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Apache Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.apache.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Nginx Community",
+    "category": "Community & Niche",
+    "url": "https://nginx.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Nginx Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.nginx.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Nginx Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.nginx.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Caddy Community",
+    "category": "Community & Niche",
+    "url": "https://caddy.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Caddy Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.caddy.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Caddy Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.caddy.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Cloudflare Community",
+    "category": "Community & Niche",
+    "url": "https://cloudflare.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Cloudflare Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.cloudflare.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Cloudflare Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.cloudflare.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Aws Community",
+    "category": "Community & Niche",
+    "url": "https://aws.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Aws Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.aws.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Aws Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.aws.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Gcp Community",
+    "category": "Community & Niche",
+    "url": "https://gcp.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Gcp Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.gcp.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Gcp Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.gcp.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Azure Community",
+    "category": "Community & Niche",
+    "url": "https://azure.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Azure Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.azure.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Azure Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.azure.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Digitalocean Community",
+    "category": "Community & Niche",
+    "url": "https://digitalocean.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Digitalocean Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.digitalocean.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Digitalocean Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.digitalocean.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Linode Community",
+    "category": "Community & Niche",
+    "url": "https://linode.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Linode Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.linode.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Linode Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.linode.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Vultr Community",
+    "category": "Community & Niche",
+    "url": "https://vultr.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Vultr Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.vultr.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Vultr Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.vultr.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Ovh Community",
+    "category": "Community & Niche",
+    "url": "https://ovh.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Ovh Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.ovh.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Ovh Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.ovh.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Archlinux Community",
+    "category": "Community & Niche",
+    "url": "https://archlinux.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Archlinux Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.archlinux.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Archlinux Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.archlinux.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Ubuntu Community",
+    "category": "Community & Niche",
+    "url": "https://ubuntu.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Ubuntu Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.ubuntu.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Ubuntu Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.ubuntu.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Debian Community",
+    "category": "Community & Niche",
+    "url": "https://debian.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Debian Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.debian.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Debian Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.debian.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Fedora Community",
+    "category": "Community & Niche",
+    "url": "https://fedora.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Fedora Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.fedora.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Fedora Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.fedora.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Gentoo Community",
+    "category": "Community & Niche",
+    "url": "https://gentoo.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Gentoo Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.gentoo.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Gentoo Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.gentoo.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Nixos Community",
+    "category": "Community & Niche",
+    "url": "https://nixos.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Nixos Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.nixos.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Nixos Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.nixos.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Freebsd Community",
+    "category": "Community & Niche",
+    "url": "https://freebsd.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Freebsd Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.freebsd.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Freebsd Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.freebsd.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Openbsd Community",
+    "category": "Community & Niche",
+    "url": "https://openbsd.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Openbsd Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.openbsd.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Openbsd Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.openbsd.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Netbsd Community",
+    "category": "Community & Niche",
+    "url": "https://netbsd.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Netbsd Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.netbsd.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Netbsd Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.netbsd.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Voidlinux Community",
+    "category": "Community & Niche",
+    "url": "https://voidlinux.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Voidlinux Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.voidlinux.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Voidlinux Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.voidlinux.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Alpine Community",
+    "category": "Community & Niche",
+    "url": "https://alpine.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Alpine Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.alpine.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Alpine Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.alpine.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Manjaro Community",
+    "category": "Community & Niche",
+    "url": "https://manjaro.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Manjaro Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.manjaro.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Manjaro Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.manjaro.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Opensuse Community",
+    "category": "Community & Niche",
+    "url": "https://opensuse.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Opensuse Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.opensuse.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Opensuse Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.opensuse.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Kali Community",
+    "category": "Community & Niche",
+    "url": "https://kali.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Kali Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.kali.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Kali Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.kali.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Tails Community",
+    "category": "Community & Niche",
+    "url": "https://tails.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Tails Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.tails.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Tails Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.tails.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Whonix Community",
+    "category": "Community & Niche",
+    "url": "https://whonix.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Whonix Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.whonix.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Whonix Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.whonix.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Qubes Community",
+    "category": "Community & Niche",
+    "url": "https://qubes.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Qubes Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.qubes.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Qubes Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.qubes.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Raspberrypi Community",
+    "category": "Community & Niche",
+    "url": "https://raspberrypi.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Raspberrypi Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.raspberrypi.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Raspberrypi Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.raspberrypi.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Arduino Community",
+    "category": "Community & Niche",
+    "url": "https://arduino.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Arduino Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.arduino.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Arduino Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.arduino.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Esp32 Community",
+    "category": "Community & Niche",
+    "url": "https://esp32.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Esp32 Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.esp32.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Esp32 Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.esp32.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Espressif Community",
+    "category": "Community & Niche",
+    "url": "https://espressif.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Espressif Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.espressif.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Espressif Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.espressif.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Adafruit Community",
+    "category": "Community & Niche",
+    "url": "https://adafruit.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Adafruit Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.adafruit.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Adafruit Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.adafruit.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Sparkfun Community",
+    "category": "Community & Niche",
+    "url": "https://sparkfun.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Sparkfun Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.sparkfun.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Sparkfun Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.sparkfun.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Hackthebox Community",
+    "category": "Community & Niche",
+    "url": "https://hackthebox.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Hackthebox Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.hackthebox.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Hackthebox Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.hackthebox.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Tryhackme Community",
+    "category": "Community & Niche",
+    "url": "https://tryhackme.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Tryhackme Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.tryhackme.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Tryhackme Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.tryhackme.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Vulnhub Community",
+    "category": "Community & Niche",
+    "url": "https://vulnhub.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Vulnhub Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.vulnhub.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Vulnhub Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.vulnhub.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Picoctf Community",
+    "category": "Community & Niche",
+    "url": "https://picoctf.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Picoctf Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.picoctf.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Picoctf Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.picoctf.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Ctftime Community",
+    "category": "Community & Niche",
+    "url": "https://ctftime.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Ctftime Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.ctftime.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Ctftime Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.ctftime.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Root-me Community",
+    "category": "Community & Niche",
+    "url": "https://root-me.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Root-me Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.root-me.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Root-me Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.root-me.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Overthewire Community",
+    "category": "Community & Niche",
+    "url": "https://overthewire.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Overthewire Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.overthewire.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Overthewire Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.overthewire.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Exploit-db Community",
+    "category": "Community & Niche",
+    "url": "https://exploit-db.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Exploit-db Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.exploit-db.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Exploit-db Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.exploit-db.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Packetstorm Community",
+    "category": "Community & Niche",
+    "url": "https://packetstorm.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Packetstorm Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.packetstorm.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Packetstorm Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.packetstorm.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Securityfocus Community",
+    "category": "Community & Niche",
+    "url": "https://securityfocus.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Securityfocus Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.securityfocus.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Securityfocus Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.securityfocus.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Wilderssecurity Community",
+    "category": "Community & Niche",
+    "url": "https://wilderssecurity.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Wilderssecurity Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.wilderssecurity.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Wilderssecurity Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.wilderssecurity.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Malwarebytes Community",
+    "category": "Community & Niche",
+    "url": "https://malwarebytes.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Malwarebytes Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.malwarebytes.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Malwarebytes Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.malwarebytes.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Virustotal Community",
+    "category": "Community & Niche",
+    "url": "https://virustotal.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Virustotal Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.virustotal.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Virustotal Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.virustotal.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Anyrun Community",
+    "category": "Community & Niche",
+    "url": "https://anyrun.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Anyrun Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.anyrun.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Anyrun Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.anyrun.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Hybridanalysis Community",
+    "category": "Community & Niche",
+    "url": "https://hybridanalysis.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Hybridanalysis Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.hybridanalysis.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Hybridanalysis Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.hybridanalysis.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Shodan Community",
+    "category": "Community & Niche",
+    "url": "https://shodan.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Shodan Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.shodan.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Shodan Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.shodan.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Censys Community",
+    "category": "Community & Niche",
+    "url": "https://censys.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Censys Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.censys.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Censys Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.censys.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Greynoise Community",
+    "category": "Community & Niche",
+    "url": "https://greynoise.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Greynoise Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.greynoise.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Greynoise Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.greynoise.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Urlscan Community",
+    "category": "Community & Niche",
+    "url": "https://urlscan.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Urlscan Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.urlscan.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Urlscan Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.urlscan.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Binaryedge Community",
+    "category": "Community & Niche",
+    "url": "https://binaryedge.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Binaryedge Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.binaryedge.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Binaryedge Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.binaryedge.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Zoomeye Community",
+    "category": "Community & Niche",
+    "url": "https://zoomeye.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Zoomeye Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.zoomeye.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Zoomeye Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.zoomeye.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Hunterhow Community",
+    "category": "Community & Niche",
+    "url": "https://hunterhow.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Hunterhow Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.hunterhow.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Hunterhow Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.hunterhow.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Fofa Community",
+    "category": "Community & Niche",
+    "url": "https://fofa.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Fofa Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.fofa.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Fofa Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.fofa.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Onyphe Community",
+    "category": "Community & Niche",
+    "url": "https://onyphe.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Onyphe Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.onyphe.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Onyphe Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.onyphe.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Leakix Community",
+    "category": "Community & Niche",
+    "url": "https://leakix.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Leakix Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.leakix.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Leakix Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.leakix.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Intelx Community",
+    "category": "Community & Niche",
+    "url": "https://intelx.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Intelx Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.intelx.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Intelx Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.intelx.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Mozilla Community",
+    "category": "Community & Niche",
+    "url": "https://mozilla.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Mozilla Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.mozilla.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Mozilla Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.mozilla.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Wikimedia Community",
+    "category": "Community & Niche",
+    "url": "https://wikimedia.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Wikimedia Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.wikimedia.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Wikimedia Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.wikimedia.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Gnome Community",
+    "category": "Community & Niche",
+    "url": "https://gnome.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Gnome Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.gnome.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Gnome Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.gnome.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Kde Community",
+    "category": "Community & Niche",
+    "url": "https://kde.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Kde Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.kde.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Kde Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.kde.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Gnu Community",
+    "category": "Community & Niche",
+    "url": "https://gnu.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Gnu Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.gnu.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Gnu Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.gnu.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Eff Community",
+    "category": "Community & Niche",
+    "url": "https://eff.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Eff Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.eff.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Eff Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.eff.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Fsf Community",
+    "category": "Community & Niche",
+    "url": "https://fsf.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Fsf Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.fsf.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Fsf Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.fsf.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Torproject Community",
+    "category": "Community & Niche",
+    "url": "https://torproject.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Torproject Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.torproject.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Torproject Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.torproject.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Matrix Community",
+    "category": "Community & Niche",
+    "url": "https://matrix.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Matrix Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.matrix.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Matrix Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.matrix.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Xmpp Community",
+    "category": "Community & Niche",
+    "url": "https://xmpp.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Xmpp Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.xmpp.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Xmpp Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.xmpp.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Signal Community",
+    "category": "Community & Niche",
+    "url": "https://signal.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Signal Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.signal.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Signal Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.signal.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Wire Community",
+    "category": "Community & Niche",
+    "url": "https://wire.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Wire Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.wire.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Wire Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.wire.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Element Community",
+    "category": "Community & Niche",
+    "url": "https://element.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Element Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.element.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Element Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.element.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Session Community",
+    "category": "Community & Niche",
+    "url": "https://session.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Session Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.session.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Session Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.session.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Briar Community",
+    "category": "Community & Niche",
+    "url": "https://briar.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Briar Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.briar.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Briar Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.briar.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Simplex Community",
+    "category": "Community & Niche",
+    "url": "https://simplex.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Simplex Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.simplex.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Simplex Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.simplex.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Pleroma Community",
+    "category": "Community & Niche",
+    "url": "https://pleroma.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Pleroma Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.pleroma.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Pleroma Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.pleroma.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Misskey Community",
+    "category": "Community & Niche",
+    "url": "https://misskey.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Misskey Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.misskey.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Misskey Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.misskey.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Pixelfed Community",
+    "category": "Community & Niche",
+    "url": "https://pixelfed.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Pixelfed Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.pixelfed.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Pixelfed Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.pixelfed.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Peertube Community",
+    "category": "Community & Niche",
+    "url": "https://peertube.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Peertube Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.peertube.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Peertube Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.peertube.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Funkwhale Community",
+    "category": "Community & Niche",
+    "url": "https://funkwhale.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Funkwhale Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.funkwhale.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Funkwhale Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.funkwhale.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Owncast Community",
+    "category": "Community & Niche",
+    "url": "https://owncast.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Owncast Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.owncast.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Owncast Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.owncast.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Invidious Community",
+    "category": "Community & Niche",
+    "url": "https://invidious.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Invidious Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.invidious.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Invidious Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.invidious.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Nitter Community",
+    "category": "Community & Niche",
+    "url": "https://nitter.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Nitter Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.nitter.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Nitter Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.nitter.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Blender Community",
+    "category": "Community & Niche",
+    "url": "https://blender.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Blender Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.blender.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Blender Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.blender.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Unrealengine Community",
+    "category": "Community & Niche",
+    "url": "https://unrealengine.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Unrealengine Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.unrealengine.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Unrealengine Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.unrealengine.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Unity Community",
+    "category": "Community & Niche",
+    "url": "https://unity.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Unity Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.unity.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Unity Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.unity.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Godot Community",
+    "category": "Community & Niche",
+    "url": "https://godot.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Godot Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.godot.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Godot Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.godot.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Cryengine Community",
+    "category": "Community & Niche",
+    "url": "https://cryengine.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Cryengine Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.cryengine.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Cryengine Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.cryengine.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "O3de Community",
+    "category": "Community & Niche",
+    "url": "https://o3de.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "O3de Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.o3de.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "O3de Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.o3de.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Defold Community",
+    "category": "Community & Niche",
+    "url": "https://defold.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Defold Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.defold.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Defold Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.defold.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Monogame Community",
+    "category": "Community & Niche",
+    "url": "https://monogame.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Monogame Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.monogame.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Monogame Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.monogame.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Soundclick Community",
+    "category": "Community & Niche",
+    "url": "https://soundclick.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Soundclick Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.soundclick.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Soundclick Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.soundclick.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Looperman Community",
+    "category": "Community & Niche",
+    "url": "https://looperman.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Looperman Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.looperman.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Looperman Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.looperman.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Ccmixter Community",
+    "category": "Community & Niche",
+    "url": "https://ccmixter.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Ccmixter Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.ccmixter.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Ccmixter Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.ccmixter.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Freesound Community",
+    "category": "Community & Niche",
+    "url": "https://freesound.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Freesound Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.freesound.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Freesound Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.freesound.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Splice Community",
+    "category": "Community & Niche",
+    "url": "https://splice.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Splice Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.splice.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Splice Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.splice.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Samplefocus Community",
+    "category": "Community & Niche",
+    "url": "https://samplefocus.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Samplefocus Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.samplefocus.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Samplefocus Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.samplefocus.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Conceptart Community",
+    "category": "Community & Niche",
+    "url": "https://conceptart.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Conceptart Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.conceptart.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Conceptart Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.conceptart.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Zbrushcentral Community",
+    "category": "Community & Niche",
+    "url": "https://zbrushcentral.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Zbrushcentral Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.zbrushcentral.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Zbrushcentral Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.zbrushcentral.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Cgsociety Community",
+    "category": "Community & Niche",
+    "url": "https://cgsociety.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Cgsociety Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.cgsociety.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Cgsociety Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.cgsociety.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Polycount Community",
+    "category": "Community & Niche",
+    "url": "https://polycount.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Polycount Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.polycount.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Polycount Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.polycount.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Blenderartists Community",
+    "category": "Community & Niche",
+    "url": "https://blenderartists.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Blenderartists Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.blenderartists.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Blenderartists Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.blenderartists.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Hltv Community",
+    "category": "Community & Niche",
+    "url": "https://hltv.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Hltv Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.hltv.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Hltv Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.hltv.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Vlr Community",
+    "category": "Community & Niche",
+    "url": "https://vlr.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Vlr Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.vlr.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Vlr Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.vlr.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Gosugamers Community",
+    "category": "Community & Niche",
+    "url": "https://gosugamers.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Gosugamers Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.gosugamers.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Gosugamers Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.gosugamers.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Liquipedia Community",
+    "category": "Community & Niche",
+    "url": "https://liquipedia.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Liquipedia Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.liquipedia.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Liquipedia Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.liquipedia.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Dotabuff Community",
+    "category": "Community & Niche",
+    "url": "https://dotabuff.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Dotabuff Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.dotabuff.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Dotabuff Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.dotabuff.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Opgg Community",
+    "category": "Community & Niche",
+    "url": "https://opgg.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Opgg Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.opgg.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Opgg Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.opgg.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Dakgg Community",
+    "category": "Community & Niche",
+    "url": "https://dakgg.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Dakgg Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.dakgg.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Dakgg Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.dakgg.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Smashboards Community",
+    "category": "Community & Niche",
+    "url": "https://smashboards.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Smashboards Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.smashboards.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Smashboards Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.smashboards.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Speedrunslive Community",
+    "category": "Community & Niche",
+    "url": "https://speedrunslive.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Speedrunslive Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.speedrunslive.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Speedrunslive Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.speedrunslive.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Tasvideos Community",
+    "category": "Community & Niche",
+    "url": "https://tasvideos.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Tasvideos Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.tasvideos.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Tasvideos Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.tasvideos.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Pokemonshowdown Community",
+    "category": "Community & Niche",
+    "url": "https://pokemonshowdown.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Pokemonshowdown Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.pokemonshowdown.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Pokemonshowdown Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.pokemonshowdown.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Smogon Community",
+    "category": "Community & Niche",
+    "url": "https://smogon.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Smogon Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.smogon.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Smogon Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.smogon.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Hardcoregaming101 Community",
+    "category": "Community & Niche",
+    "url": "https://hardcoregaming101.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Hardcoregaming101 Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.hardcoregaming101.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Hardcoregaming101 Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.hardcoregaming101.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Habr Community",
+    "category": "Community & Niche",
+    "url": "https://habr.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Habr Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.habr.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Habr Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.habr.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Tjournal Community",
+    "category": "Community & Niche",
+    "url": "https://tjournal.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Tjournal Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.tjournal.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Tjournal Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.tjournal.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Pikabu Community",
+    "category": "Community & Niche",
+    "url": "https://pikabu.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Pikabu Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.pikabu.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Pikabu Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.pikabu.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Dzen Community",
+    "category": "Community & Niche",
+    "url": "https://dzen.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Dzen Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.dzen.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Dzen Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.dzen.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Line Community",
+    "category": "Community & Niche",
+    "url": "https://line.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Line Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.line.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Line Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.line.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Kakaotalk Community",
+    "category": "Community & Niche",
+    "url": "https://kakaotalk.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Kakaotalk Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.kakaotalk.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Kakaotalk Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.kakaotalk.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Naver Community",
+    "category": "Community & Niche",
+    "url": "https://naver.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Naver Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.naver.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Naver Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.naver.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Daum Community",
+    "category": "Community & Niche",
+    "url": "https://daum.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Daum Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.daum.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Daum Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.daum.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Hatena Community",
+    "category": "Community & Niche",
+    "url": "https://hatena.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Hatena Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.hatena.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Hatena Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.hatena.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Nicovideo Community",
+    "category": "Community & Niche",
+    "url": "https://nicovideo.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Nicovideo Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.nicovideo.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Nicovideo Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.nicovideo.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Qiita Community",
+    "category": "Community & Niche",
+    "url": "https://qiita.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Qiita Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.qiita.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Qiita Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.qiita.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Zenn Community",
+    "category": "Community & Niche",
+    "url": "https://zenn.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Zenn Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.zenn.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Zenn Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.zenn.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Booth Community",
+    "category": "Community & Niche",
+    "url": "https://booth.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Booth Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.booth.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Booth Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.booth.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Pixiv Community",
+    "category": "Community & Niche",
+    "url": "https://pixiv.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Pixiv Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.pixiv.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Pixiv Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.pixiv.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Dmm Community",
+    "category": "Community & Niche",
+    "url": "https://dmm.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Dmm Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.dmm.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Dmm Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.dmm.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Douban Community",
+    "category": "Community & Niche",
+    "url": "https://douban.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Douban Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.douban.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Douban Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.douban.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Bilibili Community",
+    "category": "Community & Niche",
+    "url": "https://bilibili.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Bilibili Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.bilibili.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Bilibili Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.bilibili.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Zhihu Community",
+    "category": "Community & Niche",
+    "url": "https://zhihu.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Zhihu Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.zhihu.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Zhihu Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.zhihu.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "V2ex Community",
+    "category": "Community & Niche",
+    "url": "https://v2ex.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "V2ex Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.v2ex.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "V2ex Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.v2ex.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Juejin Community",
+    "category": "Community & Niche",
+    "url": "https://juejin.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Juejin Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.juejin.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Juejin Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.juejin.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Segmentfault Community",
+    "category": "Community & Niche",
+    "url": "https://segmentfault.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Segmentfault Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.segmentfault.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Segmentfault Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.segmentfault.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Gitee Community",
+    "category": "Community & Niche",
+    "url": "https://gitee.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Gitee Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.gitee.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Gitee Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.gitee.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Oschina Community",
+    "category": "Community & Niche",
+    "url": "https://oschina.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Oschina Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.oschina.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Oschina Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.oschina.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Csdn Community",
+    "category": "Community & Niche",
+    "url": "https://csdn.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Csdn Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.csdn.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Csdn Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.csdn.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Tieba Community",
+    "category": "Community & Niche",
+    "url": "https://tieba.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Tieba Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.tieba.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Tieba Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.tieba.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Boardgamegeek Community",
+    "category": "Community & Niche",
+    "url": "https://boardgamegeek.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Boardgamegeek Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.boardgamegeek.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Boardgamegeek Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.boardgamegeek.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Rpggeek Community",
+    "category": "Community & Niche",
+    "url": "https://rpggeek.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Rpggeek Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.rpggeek.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Rpggeek Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.rpggeek.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Videogamegeek Community",
+    "category": "Community & Niche",
+    "url": "https://videogamegeek.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Videogamegeek Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.videogamegeek.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Videogamegeek Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.videogamegeek.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Discogs Community",
+    "category": "Community & Niche",
+    "url": "https://discogs.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Discogs Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.discogs.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Discogs Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.discogs.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Rateyourmusic Community",
+    "category": "Community & Niche",
+    "url": "https://rateyourmusic.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Rateyourmusic Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.rateyourmusic.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Rateyourmusic Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.rateyourmusic.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Setlist Community",
+    "category": "Community & Niche",
+    "url": "https://setlist.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Setlist Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.setlist.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Setlist Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.setlist.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Allmusic Community",
+    "category": "Community & Niche",
+    "url": "https://allmusic.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Allmusic Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.allmusic.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Allmusic Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.allmusic.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Metalarchives Community",
+    "category": "Community & Niche",
+    "url": "https://metalarchives.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Metalarchives Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.metalarchives.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Metalarchives Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.metalarchives.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Genius Community",
+    "category": "Community & Niche",
+    "url": "https://genius.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Genius Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.genius.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Genius Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.genius.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Songmeanings Community",
+    "category": "Community & Niche",
+    "url": "https://songmeanings.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Songmeanings Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.songmeanings.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Songmeanings Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.songmeanings.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Lyricsfreak Community",
+    "category": "Community & Niche",
+    "url": "https://lyricsfreak.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Lyricsfreak Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.lyricsfreak.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Lyricsfreak Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.lyricsfreak.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Mathoverflow Community",
+    "category": "Community & Niche",
+    "url": "https://mathoverflow.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Mathoverflow Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.mathoverflow.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Mathoverflow Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.mathoverflow.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Physicsforums Community",
+    "category": "Community & Niche",
+    "url": "https://physicsforums.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Physicsforums Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.physicsforums.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Physicsforums Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.physicsforums.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Chemistryforums Community",
+    "category": "Community & Niche",
+    "url": "https://chemistryforums.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Chemistryforums Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.chemistryforums.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Chemistryforums Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.chemistryforums.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Biostars Community",
+    "category": "Community & Niche",
+    "url": "https://biostars.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Biostars Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.biostars.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Biostars Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.biostars.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Researchgate Community",
+    "category": "Community & Niche",
+    "url": "https://researchgate.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Researchgate Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.researchgate.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Researchgate Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.researchgate.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Academia Community",
+    "category": "Community & Niche",
+    "url": "https://academia.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Academia Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.academia.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Academia Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.academia.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Mendeley Community",
+    "category": "Community & Niche",
+    "url": "https://mendeley.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Mendeley Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.mendeley.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Mendeley Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.mendeley.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Zotero Community",
+    "category": "Community & Niche",
+    "url": "https://zotero.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Zotero Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.zotero.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Zotero Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.zotero.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Philpapers Community",
+    "category": "Community & Niche",
+    "url": "https://philpapers.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Philpapers Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.philpapers.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Philpapers Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.philpapers.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Ssrn Community",
+    "category": "Community & Niche",
+    "url": "https://ssrn.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Ssrn Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.ssrn.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Ssrn Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.ssrn.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Crossref Community",
+    "category": "Community & Niche",
+    "url": "https://crossref.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Crossref Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.crossref.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Crossref Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.crossref.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  },
+  {
+    "name": "Orcid Community",
+    "category": "Community & Niche",
+    "url": "https://orcid.org/user/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 40
+  },
+  {
+    "name": "Orcid Forum",
+    "category": "Tech Forums",
+    "url": "https://forum.orcid.com/u/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 45
+  },
+  {
+    "name": "Orcid Dev Portal",
+    "category": "Code & Dev",
+    "url": "https://dev.orcid.io/profiles/{}",
+    "check_type": "status_code",
+    "error_code": 404,
+    "error_message": "Not Found",
+    "rank": 50
+  }
+]

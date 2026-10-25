@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TRINETRA OSINT Dossier - Comprehensive Digital Footprint &amp; Threat Assessment</title>
+<style>
+  @page {
+    size: letter portrait;
+    margin: 20mm 15mm 20mm 15mm;
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+      font-size: 8pt;
+      color: #64748b;
+    }
+    @bottom-left {
+      content: "TRINETRA OSINT PLATFORM | CASE: CASE-2026-0881";
+      font-size: 8pt;
+      color: #64748b;
+    }
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    background-color: #ffffff;
+    line-height: 1.5;
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Watermark */
+  .watermark {
+    position: fixed;
+    top: 35%;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    font-size: 42pt;
+    font-weight: 900;
+    color: rgba(148, 163, 184, 0.12);
+    transform: rotate(-30deg);
+    z-index: -1000;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
+  .cover-page {
+    page-break-after: always;
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  .logo-box {
+    display: inline-block;
+    background: #0f172a;
+    color: #38bdf8;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 20pt;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+  }
+
+  .doc-title {
+    font-size: 24pt;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 12px;
+  }
+
+  .doc-subtitle {
+    font-size: 13pt;
+    color: #64748b;
+    margin-bottom: 50px;
+  }
+
+  .classification-badge {
+    display: inline-block;
+    padding: 6px 18px;
+    border-radius: 4px;
+    font-size: 11pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #f87171;
+  }
+
+  .meta-grid {
+    margin: 40px auto;
+    width: 80%;
+    text-align: left;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 20px 0;
+  }
+
+  .meta-row {
+    margin-bottom: 8px;
+    font-size: 10.5pt;
+  }
+
+  .meta-label {
+    font-weight: 700;
+    color: #475569;
+    display: inline-block;
+    width: 170px;
+  }
+
+  h1 {
+    font-size: 16pt;
+    color: #0f172a;
+    border-bottom: 2px solid #0284c7;
+    padding-bottom: 6px;
+    margin-top: 30px;
+    page-break-after: avoid;
+  }
+
+  h2 {
+    font-size: 13pt;
+    color: #1e293b;
+    margin-top: 20px;
+    page-break-after: avoid;
+  }
+
+  .alert-box {
+    background-color: #f8fafc;
+    border-left: 4px solid #0284c7;
+    padding: 12px 16px;
+    margin: 15px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.5pt;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 9pt;
+  }
+
+  th {
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-weight: 600;
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #334155;
+  }
+
+  td {
+    padding: 8px 10px;
+    border: 1px solid #cbd5e1;
+    vertical-align: top;
+  }
+
+  tr:nth-child(even) td {
+    background-color: #f8fafc;
+  }
+
+  .badge-confidence {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 8pt;
+    background-color: #dbeafe;
+    color: #1e40af;
+  }
+
+  .badge-verified {
+    background-color: #dcfce7;
+    color: #166534;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 8pt;
+    font-weight: 700;
+  }
+
+  .citation-tag {
+    font-family: monospace;
+    font-weight: 700;
+    color: #0284c7;
+    background: #e0f2fe;
+    padding: 1px 4px;
+    border-radius: 3px;
+  }
+
+  .footer-notice {
+    font-size: 8pt;
+    color: #94a3b8;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="watermark">
+  CASE: CASE-2026-0881<br>
+  Confidential
+</div>
+
+<div class="cover-page">
+  <div class="logo-box">👁 TRINETRA OSINT</div>
+  <div class="doc-title">Comprehensive Digital Footprint &amp; Threat Assessment</div>
+  <div class="doc-subtitle">Defensible Open Source Intelligence & Digital Footprint Dossier</div>
+  
+  <div class="classification-badge">Confidential</div>
+
+  <div class="meta-grid">
+    <div class="meta-row"><span class="meta-label">Case Identifier:</span> <code>CASE-2026-0881</code></div>
+    <div class="meta-row"><span class="meta-label">Lead Investigator:</span> Chief OSINT Specialist M. Sharma</div>
+    <div class="meta-row"><span class="meta-label">Generated Timestamp:</span> 2026-10-25 15:53:43 UTC</div>
+    <div class="meta-row"><span class="meta-label">Investigation Purpose:</span> Authorized Digital Footprint Assessment &amp; Identity Corroboration</div>
+    <div class="meta-row"><span class="meta-label">Platform Version:</span> TRINETRA Core v1.0.0</div>
+    <div class="meta-row"><span class="meta-label">Privacy Redaction:</span> Standard (Full Disclosure)</div>
+  </div>
+</div>
+
+
+<h1>1. Executive Summary</h1>
+<div class="alert-box">
+  An investigation into target entities confirmed active development presence on GitHub [fnd_usr_01]. Associated social footprint was corroborated on Twitter/X under handle variant alex_devsec [fnd_usr_02]. Domain infrastructure routing was validated via DNS MX exchangers [fnd_eml_01] and Certificate Transparency logs [fnd_eml_02]. Public telecommunication records map the associated inquiry number to a California mobile allocation [fnd_phn_01]. Forensic image evaluation extracted metadata confirming capture via Sony A7 IV [fnd_img_01]. Gated onion indexing noted a single historical text paste mentioning the corporate domain [fnd_drk_01].
+</div>
+
+<h1>2. Scope & Methodology</h1>
+<p>
+  This investigation targeted entity artifacts associated with <strong>Comprehensive Digital Footprint &amp; Threat Assessment</strong>.
+  All inquiries followed defensible open-source intelligence doctrines. Sources queried include:
+</p>
+<ul>
+  <li><strong>Username Enumeration:</strong> Validated profiles across 500+ internet platforms, forums, code hosts, and social directories.</li>
+  <li><strong>Email & Infrastructure:</strong> RFC 5322 syntax validation, authoritative DNS MX exchangers, RDAP registry queries, and Certificate Transparency logs.</li>
+  <li><strong>Phone Footprint:</strong> ITU-T numbering plans, carrier/line-type allocation, and public web footprint indexes (strictly excluding consumer people-search brokers).</li>
+  <li><strong>Image Provenance:</strong> EXIF metadata extraction, GPS coordinate parsing, Error Level Analysis (ELA) for manipulation triage, and perceptual hash indexing (zero facial recognition).</li>
+  <li><strong>Dark Web Mentions:</strong> Ahmia onion search indexing under rigorous multi-layer safety gating, content sanitization, script stripping, and hard-block keyword filtering.</li>
+</ul>
+
+
+<h1>3. Analyst Narrative & Corroborated Insights</h1>
+<p>The subject exhibits a high-visibility open-source development profile [fnd_usr_01]. Infrastructure analysis reveals consistent deployment of enterprise security controls including Google Workspace and TLS certificates [fnd_eml_01] [fnd_eml_02]. All findings represent publicly indexable entries gathered under lawful purpose [fnd_usr_01].</p>
+
+
+<h1>4. Evidence Findings (Corroborated & Leads)</h1>
+<p>
+  Each finding below carries a cryptographic identifier, exact URL reference, evidence snippet, and calibrated confidence rating.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width: 14%;">Finding ID</th>
+      <th style="width: 12%;">Target</th>
+      <th style="width: 16%;">Source / Module</th>
+      <th style="width: 10%;">Confidence</th>
+      <th style="width: 48%;">Evidence Snippet & Exact URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        <span class="citation-tag">[fnd_usr_01]</span><br>
+        
+        <span class="badge-verified">VERIFIED</span>
+        
+      </td>
+      <td><code>alex-devsec</code></td>
+      <td>
+        <strong>GitHub</strong><br>
+        <span style="font-size: 8pt; color: #64748b;">Module: username</span>
+      </td>
+      <td>
+        <span class="badge-confidence">96%</span>
+      </td>
+      <td>
+        <div>Active public profile with 38 repositories, member of DevSecOps org. Last commit 2 days ago.</div>
+        <div style="margin-top: 4px; font-size: 8pt; color: #0284c7; word-break: break-all;">
+          <strong>URL:</strong> <a href="https://github.com/alex-devsec" style="color: #0284c7;">https://github.com/alex-devsec</a>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-top: 2px;">
+          <em>Rationale: Direct profile HTTP 200 with matching bio token.</em>
+        </div>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        <span class="citation-tag">[fnd_usr_02]</span><br>
+        
+        <span class="badge-verified">VERIFIED</span>
+        
+      </td>
+      <td><code>alex_devsec</code></td>
+      <td>
+        <strong>Twitter/X</strong><br>
+        <span style="font-size: 8pt; color: #64748b;">Module: username</span>
+      </td>
+      <td>
+        <span class="badge-confidence">91%</span>
+      </td>
+      <td>
+        <div>Verified handle claiming Security Researcher role. Pinned thread links to personal portfolio.</div>
+        <div style="margin-top: 4px; font-size: 8pt; color: #0284c7; word-break: break-all;">
+          <strong>URL:</strong> <a href="https://x.com/alex_devsec" style="color: #0284c7;">https://x.com/alex_devsec</a>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-top: 2px;">
+          <em>Rationale: Handle exact match on primary social platform.</em>
+        </div>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        <span class="citation-tag">[fnd_eml_01]</span><br>
+        
+        <span class="badge-verified">VERIFIED</span>
+        
+      </td>
+      <td><code>alex-security.io</code></td>
+      <td>
+        <strong>DNS MX Resolver</strong><br>
+        <span style="font-size: 8pt; color: #64748b;">Module: email_domain</span>
+      </td>
+      <td>
+        <span class="badge-confidence">99%</span>
+      </td>
+      <td>
+        <div>Mail exchangers resolve to Google Workspace (aspmx.l.google.com). SPF record enforced.</div>
+        <div style="margin-top: 4px; font-size: 8pt; color: #0284c7; word-break: break-all;">
+          <strong>URL:</strong> <a href="dns://alex-security.io/MX" style="color: #0284c7;">dns://alex-security.io/MX</a>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-top: 2px;">
+          <em>Rationale: Authoritative DNS MX query confirmed active routing.</em>
+        </div>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        <span class="citation-tag">[fnd_eml_02]</span><br>
+        
+        <span class="badge-verified">VERIFIED</span>
+        
+      </td>
+      <td><code>alex-security.io</code></td>
+      <td>
+        <strong>crt.sh Certificate Transparency</strong><br>
+        <span style="font-size: 8pt; color: #64748b;">Module: email_domain</span>
+      </td>
+      <td>
+        <span class="badge-confidence">95%</span>
+      </td>
+      <td>
+        <div>Discovered active subdomain api.alex-security.io logged in Let&#39;s Encrypt certificate transparency audit log.</div>
+        <div style="margin-top: 4px; font-size: 8pt; color: #0284c7; word-break: break-all;">
+          <strong>URL:</strong> <a href="https://api.alex-security.io" style="color: #0284c7;">https://api.alex-security.io</a>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-top: 2px;">
+          <em>Rationale: Cryptographic TLS issuance record in global CT log.</em>
+        </div>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        <span class="citation-tag">[fnd_phn_01]</span><br>
+        
+        <span class="badge-verified">VERIFIED</span>
+        
+      </td>
+      <td><code>+1 415-555-2671</code></td>
+      <td>
+        <strong>ITU-T Telecommunication Registry</strong><br>
+        <span style="font-size: 8pt; color: #64748b;">Module: phone</span>
+      </td>
+      <td>
+        <span class="badge-confidence">98%</span>
+      </td>
+      <td>
+        <div>Valid North American mobile number (+1 415-555-2671). Assigned carrier range: T-Mobile USA. Region: San Francisco, California.</div>
+        <div style="margin-top: 4px; font-size: 8pt; color: #0284c7; word-break: break-all;">
+          <strong>URL:</strong> <a href="tel:+14155552671" style="color: #0284c7;">tel:+14155552671</a>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-top: 2px;">
+          <em>Rationale: Authoritative libphonenumber E.164 syntax and carrier range allocation.</em>
+        </div>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        <span class="citation-tag">[fnd_img_01]</span><br>
+        
+        <span class="badge-verified">VERIFIED</span>
+        
+      </td>
+      <td><code>headshot.jpg</code></td>
+      <td>
+        <strong>EXIF Metadata Extractor</strong><br>
+        <span style="font-size: 8pt; color: #64748b;">Module: image</span>
+      </td>
+      <td>
+        <span class="badge-confidence">97%</span>
+      </td>
+      <td>
+        <div>Camera: Sony A7 IV. Exposure: 1/250s at f/2.8. Captured: 2025-08-14 16:22:10. Software: Lightroom v12.1. GPS coordinates embedded in header: 37.7749, -122.4194.</div>
+        <div style="margin-top: 4px; font-size: 8pt; color: #0284c7; word-break: break-all;">
+          <strong>URL:</strong> <a href="embedded://media/headshot.jpg" style="color: #0284c7;">embedded://media/headshot.jpg</a>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-top: 2px;">
+          <em>Rationale: Parsed direct EXIF tags from supplied artifact.</em>
+        </div>
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        <span class="citation-tag">[fnd_drk_01]</span><br>
+        
+        <span style="font-size: 7.5pt; color: #64748b;">UNVERIFIED</span>
+        
+      </td>
+      <td><code>alex-security.io</code></td>
+      <td>
+        <strong>Ahmia Onion Search Index</strong><br>
+        <span style="font-size: 8pt; color: #64748b;">Module: darkweb</span>
+      </td>
+      <td>
+        <span class="badge-confidence">82%</span>
+      </td>
+      <td>
+        <div>Metadata mention: Public pastebin repository referencing monitored domain alex-security.io. [Scripts stripped, media download blocked]</div>
+        <div style="margin-top: 4px; font-size: 8pt; color: #0284c7; word-break: break-all;">
+          <strong>URL:</strong> <a href="http://pasteonionexample5xyz.onion/raw/alex-sec" style="color: #0284c7;">http://pasteonionexample5xyz.onion/raw/alex-sec</a>
+        </div>
+        <div style="font-size: 7.5pt; color: #64748b; margin-top: 2px;">
+          <em>Rationale: Indexed public onion search hit referencing monitored domain string.</em>
+        </div>
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h1>5. Chronological Timeline</h1>
+<p>Reconstructed temporal sequence based on archive timestamps, EXIF headers, and registration events:</p>
+<table>
+  <thead>
+    <tr>
+      <th style="width: 25%;">Timestamp / Event Date</th>
+      <th style="width: 20%;">Source</th>
+      <th style="width: 55%;">Chronological Observation</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td><code>2026-10-25T14:10:00Z</code></td>
+      <td><strong>GitHub</strong></td>
+      <td>Active public profile with 38 repositories, member of DevSecOps org. Last commit 2 days ago.... <span class="citation-tag">[fnd_usr_01]</span></td>
+    </tr>
+    
+    <tr>
+      <td><code>2026-10-25T14:11:15Z</code></td>
+      <td><strong>Twitter/X</strong></td>
+      <td>Verified handle claiming Security Researcher role. Pinned thread links to personal portfolio.... <span class="citation-tag">[fnd_usr_02]</span></td>
+    </tr>
+    
+    <tr>
+      <td><code>2026-10-25T14:12:00Z</code></td>
+      <td><strong>DNS MX Resolver</strong></td>
+      <td>Mail exchangers resolve to Google Workspace (aspmx.l.google.com). SPF record enforced.... <span class="citation-tag">[fnd_eml_01]</span></td>
+    </tr>
+    
+    <tr>
+      <td><code>2026-10-25T14:12:30Z</code></td>
+      <td><strong>crt.sh Certificate Transparency</strong></td>
+      <td>Discovered active subdomain api.alex-security.io logged in Let&#39;s Encrypt certificate transparency audit log.... <span class="citation-tag">[fnd_eml_02]</span></td>
+    </tr>
+    
+    <tr>
+      <td><code>2026-10-25T14:14:00Z</code></td>
+      <td><strong>ITU-T Telecommunication Registry</strong></td>
+      <td>Valid North American mobile number (+1 415-555-2671). Assigned carrier range: T-Mobile USA. Region: San Francisco, Calif... <span class="citation-tag">[fnd_phn_01]</span></td>
+    </tr>
+    
+    <tr>
+      <td><code>2026-10-25T14:16:00Z</code></td>
+      <td><strong>EXIF Metadata Extractor</strong></td>
+      <td>Camera: Sony A7 IV. Exposure: 1/250s at f/2.8. Captured: 2025-08-14 16:22:10. Software: Lightroom v12.1. GPS coordinates... <span class="citation-tag">[fnd_img_01]</span></td>
+    </tr>
+    
+    <tr>
+      <td><code>2026-10-25T14:18:00Z</code></td>
+      <td><strong>Ahmia Onion Search Index</strong></td>
+      <td>Metadata mention: Public pastebin repository referencing monitored domain alex-security.io. [Scripts stripped, media dow... <span class="citation-tag">[fnd_drk_01]</span></td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h1>6. Relational Link Graph</h1>
+<p>
+  Identified <strong>19 interconnected entities</strong> connected via 
+  <strong>14 evidentiary relationships</strong>.
+</p>
+<div class="alert-box">
+  Graph connectivity establishes high-confidence bridges between target usernames, associated emails, domain hosts, and public listings. No speculative bridges were synthesized.
+</div>
+
+<h1>7. Chain of Custody & Hash Manifest</h1>
+<h2>Tamper-Evident SHA-256 Digest Manifest</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="width: 18%;">Item ID</th>
+      <th style="width: 22%;">Source</th>
+      <th style="width: 40%;">SHA-256 Digest</th>
+      <th style="width: 20%;">Capture Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td><code>fnd_usr_01</code></td>
+      <td>GitHub</td>
+      <td><code style="font-size: 7.5pt;">720a917c4d71b99049e33a0453253d25dee043917cf77c983e453a2162bcb758</code></td>
+      <td><span style="font-size: 8pt;">2026-10-25T14:10:00Z</span></td>
+    </tr>
+    
+    <tr>
+      <td><code>fnd_usr_02</code></td>
+      <td>Twitter/X</td>
+      <td><code style="font-size: 7.5pt;">f9f6313b9c18ca3221f1afc378295845d662bfa64fd6a31cf7ae7fc973b851dc</code></td>
+      <td><span style="font-size: 8pt;">2026-10-25T14:11:15Z</span></td>
+    </tr>
+    
+    <tr>
+      <td><code>fnd_eml_01</code></td>
+      <td>DNS MX Resolver</td>
+      <td><code style="font-size: 7.5pt;">cd2eba3254568b71aacf65f7c250b010fa13f34e80d711e9f41896ff0ac7e390</code></td>
+      <td><span style="font-size: 8pt;">2026-10-25T14:12:00Z</span></td>
+    </tr>
+    
+    <tr>
+      <td><code>fnd_eml_02</code></td>
+      <td>crt.sh Certificate Transparency</td>
+      <td><code style="font-size: 7.5pt;">95a907fbb25e26fb04e0953416313267c4191bcc6fdc4ac16be23ce792e6893e</code></td>
+      <td><span style="font-size: 8pt;">2026-10-25T14:12:30Z</span></td>
+    </tr>
+    
+    <tr>
+      <td><code>fnd_phn_01</code></td>
+      <td>ITU-T Telecommunication Registry</td>
+      <td><code style="font-size: 7.5pt;">5983ab70fee6884cd8015fd07060670f1a54f416eb324e83d4c9f657b0965e7c</code></td>
+      <td><span style="font-size: 8pt;">2026-10-25T14:14:00Z</span></td>
+    </tr>
+    
+    <tr>
+      <td><code>fnd_img_01</code></td>
+      <td>EXIF Metadata Extractor</td>
+      <td><code style="font-size: 7.5pt;">e11e9361ad96733a6b0c8c070533cf6979ce5903da8f28765fe9ad9008a17cb0</code></td>
+      <td><span style="font-size: 8pt;">2026-10-25T14:16:00Z</span></td>
+    </tr>
+    
+    <tr>
+      <td><code>fnd_drk_01</code></td>
+      <td>Ahmia Onion Search Index</td>
+      <td><code style="font-size: 7.5pt;">8d1b78b7505b5a3099c3ad1a83215a2b79e4f6df6b640ba35340b336b96e1435</code></td>
+      <td><span style="font-size: 8pt;">2026-10-25T14:18:00Z</span></td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<h2>Chain of Custody Table</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="width: 10%;">Step</th>
+      <th style="width: 25%;">Action</th>
+      <th style="width: 20%;">Investigator / Tool</th>
+      <th style="width: 25%;">Timestamp</th>
+      <th style="width: 20%;">Operational Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>#1</td>
+      <td><strong>OSINT Target Ingestion</strong></td>
+      <td>Chief OSINT Specialist M. Sharma<br><span style="font-size: 7.5pt; color: #64748b;">TRINETRA v1.0.0</span></td>
+      <td><code>2026-10-25T15:53:43.204846+00:00</code></td>
+      <td>Ingested queries and verified lawful investigative purpose for Case CASE-2026-0881.</td>
+    </tr>
+    
+    <tr>
+      <td>#2</td>
+      <td><strong>Evidence Capture &amp; Cryptographic Hashing</strong></td>
+      <td>Chief OSINT Specialist M. Sharma<br><span style="font-size: 7.5pt; color: #64748b;">TRINETRA v1.0.0 - Integrity Engine</span></td>
+      <td><code>2026-10-25T15:53:43.204846+00:00</code></td>
+      <td>Captured 7 finding artifacts with immutable SHA-256 validation.</td>
+    </tr>
+    
+    <tr>
+      <td>#3</td>
+      <td><strong>Investigation Report Compilation</strong></td>
+      <td>Chief OSINT Specialist M. Sharma<br><span style="font-size: 7.5pt; color: #64748b;">TRINETRA v1.0.0 - Report Builder</span></td>
+      <td><code>2026-10-25T15:53:43.204846+00:00</code></td>
+      <td>Generated defensible report package with redaction and citation validation.</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+<div class="footer-notice">
+  CONFIDENTIAL & PROPRIETARY. Synthesized strictly from open-source public endpoints, archive caches, and telemetry indices. No credentials, private records, or unauthorized accesses were utilized.
+</div>
+
+</body>
+</html>
