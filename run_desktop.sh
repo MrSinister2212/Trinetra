@@ -18,10 +18,22 @@ else
     pip install pywebview pyinstaller
 fi
 
+# Determine python binary
+if [ -f ".venv/Scripts/python.exe" ]; then
+    PYTHON_BIN=".venv/Scripts/python.exe"
+elif [ -f ".venv/bin/python" ]; then
+    PYTHON_BIN=".venv/bin/python"
+else
+    PYTHON_BIN="python"
+fi
+
+# Ensure greenlet is installed (required by SQLAlchemy asyncio)
+"$PYTHON_BIN" -c "import greenlet" 2>/dev/null || "$PYTHON_BIN" -m pip install "greenlet>=3.0.0" "sqlalchemy[asyncio]"
+
 # Ensure sites.json exists
 if [ ! -f "backend/app/modules/data/sites.json" ]; then
     echo "[Setup] Generating 500+ site definitions..."
-    python backend/generate_sites.py
+    "$PYTHON_BIN" backend/generate_sites.py
 fi
 
 # Ensure frontend is built
@@ -31,4 +43,4 @@ if [ ! -d "frontend/dist" ]; then
 fi
 
 echo "[TRINETRA] Launching native desktop application..."
-python trinetra_desktop.py
+"$PYTHON_BIN" trinetra_desktop.py

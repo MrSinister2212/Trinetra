@@ -15,9 +15,18 @@ if not exist .venv (
     call .\.venv\Scripts\activate.bat
 )
 
+if exist .venv\Scripts\python.exe (
+    set "PYTHON_BIN=.\.venv\Scripts\python.exe"
+) else (
+    set "PYTHON_BIN=python"
+)
+
+REM Ensure greenlet is present for SQLAlchemy asyncio
+%PYTHON_BIN% -c "import greenlet" 2>nul || %PYTHON_BIN% -m pip install "greenlet>=3.0.0" "sqlalchemy[asyncio]"
+
 if not exist backend\app\modules\data\sites.json (
     echo [Setup] Generating 500+ site definitions...
-    python backend\generate_sites.py
+    %PYTHON_BIN% backend\generate_sites.py
 )
 
 if not exist frontend\dist (
@@ -29,4 +38,4 @@ if not exist frontend\dist (
 )
 
 echo [TRINETRA] Launching native desktop window...
-python trinetra_desktop.py
+%PYTHON_BIN% trinetra_desktop.py

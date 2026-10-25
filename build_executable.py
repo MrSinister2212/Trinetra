@@ -47,6 +47,8 @@ def build_exe():
         "uvicorn.lifespans",
         "uvicorn.lifespans.on",
         "aiosqlite",
+        "greenlet",
+        "greenlet._greenlet",
         "sqlalchemy.dialects.sqlite",
         "xhtml2pdf",
         "reportlab",
@@ -61,6 +63,11 @@ def build_exe():
         "webview.platforms.winforms",
         "clr",
         "pythonnet",
+        "jose",
+        "passlib",
+        "bcrypt",
+        "app.routes.ai_routes",
+        "app.ai.copilot",
     ]
 
     cmd = [
