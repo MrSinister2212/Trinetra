@@ -81,21 +81,41 @@ The Report Builder implements strict institutional evidentiary standards:
 
 ---
 
-## 🚀 Quick Start with Docker Compose
+## 💻 Downloadable Desktop Software (Standalone .exe & Native Runner)
 
-Ensure Docker and Docker Compose are installed:
+TRINETRA is available as **downloadable desktop software** running in a native OS window with embedded local intelligence engine:
 
-```bash
-# 1. Clone repository
-git clone https://github.com/your-org/trinetra.git
-cd trinetra
-
-# 2. Configure environment
-cp .env.example .env
-
-# 3. Launch all services (Backend, Frontend, Redis, Tor SOCKS Proxy)
-docker-compose up --build -d
+### 1. Standalone Windows Executable (`Trinetra.exe`)
+A fully frozen, self-contained desktop package is generated at:
 ```
+dist/Trinetra/Trinetra.exe
+```
+- **Zero-Dependency**: Bundles the Python runtime, FastAPI core, 766 site definitions, report generators, and the React UI into a native executable.
+- **Embedded Web Engine**: Uses the Microsoft Edge WebView2 runtime to render the dark-theme UI with hardware acceleration.
+- **No Node.js or Python required on target machines**: Simply zip or copy the `dist/Trinetra/` folder and run `Trinetra.exe`!
+
+To rebuild the standalone executable at any time:
+```bash
+python build_executable.py
+```
+
+### 2. One-Click Desktop Batch Launcher (`run_desktop.bat`)
+To run directly from source with a native window:
+- Double click **`run_desktop.bat`**, or run:
+```cmd
+.\run_desktop.bat
+```
+
+### 3. Electron Desktop Wrapper
+If you prefer an Electron desktop wrapper:
+```bash
+cd frontend
+npm run electron
+```
+
+---
+
+## 🚀 Quick Start with Docker Compose (Optional Web Mode)
 
 - **Frontend Application:** `http://localhost:3000`
 - **FastAPI Documentation:** `http://localhost:8000/docs`
