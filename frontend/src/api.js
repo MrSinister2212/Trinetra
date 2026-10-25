@@ -104,5 +104,15 @@ export const api = {
   },
 
   // Audit Logs
-  getAuditLogs: () => request('/audit')
+  getAuditLogs: () => request('/audit'),
+
+  // AI Intelligence Copilot
+  draftAINarrative: (findings, caseInfo, templateType = 'technical_report') => request('/ai/draft-narrative', {
+    method: 'POST',
+    body: JSON.stringify({ findings, case_info: caseInfo, template_type: templateType })
+  }),
+  correlateAILeads: (findings) => request('/ai/correlate-leads', {
+    method: 'POST',
+    body: JSON.stringify({ findings })
+  })
 };

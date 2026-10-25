@@ -28,15 +28,26 @@ export default function ReportBuilderModal({ isOpen, onClose, activeCase }) {
 
   const findings = activeCase.findings || [];
 
-  // Helper to auto-draft citation-compliant executive summary
-  const autoDraftCitationText = () => {
+  const [aiLoading, setAiLoading] = useState(false);
+
+  // AI Copilot to draft citation-compliant executive summary
+  const autoDraftCitationText = async () => {
     if (findings.length === 0) {
       setError('Please attach at least one finding to this case first.');
       return;
     }
-    const sampleCitations = findings.slice(0, 3).map(f => `[${f.id}]`).join(' and ');
-    const draft = `An authorized open-source intelligence scan corroborated high-confidence findings across public directories ${sampleCitations}. Investigation confirmed active profile infrastructure without unauthorized credential access [${findings[0].id}].`;
-    setExecutiveSummary(draft);
+    setAiLoading(true);
+    setError('');
+    try {
+      const res = await api.draftAINarrative(findings, activeCase, templateType);
+      if (res && res.executive_summary) {
+        setExecutiveSummary(res.executive_summary);
+      }
+    } catch (e) {
+      setError(`AI Copilot error: ${e.message}`);
+    } finally {
+      setAiLoading(false);
+    }
   };
 
   const handleGenerate = async (e) => {
@@ -160,10 +171,20 @@ export default function ReportBuilderModal({ isOpen, onClose, activeCase }) {
               <button
                 type="button"
                 onClick={autoDraftCitationText}
-                className="text-[11px] text-brand-400 hover:text-brand-300 font-semibold flex items-center space-x-1"
+                disabled={aiLoading}
+                className="text-[11px] text-brand-400 hover:text-brand-300 font-semibold flex items-center space-x-1.5 px-2.5 py-1 rounded bg-brand-950/70 border border-brand-800/80 hover:bg-brand-900 transition"
               >
-                <Sparkles className="w-3 h-3" />
-                <span>Auto-Format Stored Citations</span>
+                {aiLoading ? (
+                  <>
+                    <Loader2 className="w-3.5 h-3.5 animate-spin text-brand-400" />
+                    <span>AI Copilot Synthesizing...</span>
+                  </>
+                ) : (
+                  <>
+                    <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
+                    <span>AI Auto-Draft Narrative (Strict Citation)</span>
+                  </>
+                )}
               </button>
             </div>
             <textarea

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { ExternalLink, PlusCircle, CheckCircle, ShieldCheck, Filter, ArrowUpDown, Copy, Check } from 'lucide-react';
+import { ExternalLink, PlusCircle, CheckCircle, ShieldCheck, Filter, ArrowUpDown, Copy, Check, Sparkles, Brain, Loader2 } from 'lucide-react';
+import { api } from '../api';
 
 export default function FindingsTable({ findings, activeCase, onAddToCase }) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -8,6 +9,21 @@ export default function FindingsTable({ findings, activeCase, onAddToCase }) {
   const [sortBy, setSortBy] = useState('confidence'); // confidence, timestamp, source
   const [sortOrder, setSortOrder] = useState('desc');
   const [copiedId, setCopiedId] = useState(null);
+  const [aiAnalysis, setAiAnalysis] = useState(null);
+  const [aiLoading, setAiLoading] = useState(false);
+
+  const runAiCorrelation = async () => {
+    if (findings.length === 0) return;
+    setAiLoading(true);
+    try {
+      const res = await api.correlateAILeads(findings);
+      setAiAnalysis(res);
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setAiLoading(false);
+    }
+  };
 
   const copyFindingId = (id) => {
     navigator.clipboard.writeText(`[${id}]`);
@@ -97,9 +113,56 @@ export default function FindingsTable({ findings, activeCase, onAddToCase }) {
               <ArrowUpDown className="w-3 h-3" />
               <span>Confidence</span>
             </button>
+
+            <button
+              onClick={runAiCorrelation}
+              disabled={aiLoading || findings.length === 0}
+              className="flex items-center space-x-1.5 px-3 py-1 rounded bg-indigo-950/80 hover:bg-indigo-900 text-indigo-300 border border-indigo-800 font-semibold text-xs transition disabled:opacity-50"
+            >
+              {aiLoading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Brain className="w-3.5 h-3.5 text-cyan-400" />}
+              <span>AI Correlate Leads</span>
+            </button>
           </div>
         </div>
       </div>
+
+      {/* AI Intelligence Insights Box */}
+      {aiAnalysis && (
+        <div className="p-4 bg-dark-850/90 border-b border-indigo-900/60 space-y-2.5">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-2">
+              <Brain className="w-4 h-4 text-cyan-400" />
+              <span className="text-xs font-bold text-slate-100">
+                AI Cross-Platform Correlation Engine
+              </span>
+            </div>
+            <div className="flex items-center space-x-2 text-xs">
+              <span className="text-slate-400">Threat Exposure:</span>
+              <span className={`px-2 py-0.5 rounded font-bold font-mono text-[10px] ${
+                aiAnalysis.overall_exposure_risk === 'HIGH'
+                  ? 'bg-rose-950 text-rose-300 border border-rose-800'
+                  : aiAnalysis.overall_exposure_risk === 'MEDIUM'
+                  ? 'bg-amber-950 text-amber-300 border border-amber-800'
+                  : 'bg-emerald-950 text-emerald-300 border border-emerald-800'
+              }`}>
+                {aiAnalysis.overall_exposure_risk}
+              </span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pt-1">
+            {aiAnalysis.correlations?.map((c, i) => (
+              <div key={i} className="p-2.5 rounded bg-dark-900 border border-slate-800 text-xs space-y-1">
+                <div className="flex items-center justify-between">
+                  <span className="font-semibold text-sky-300">{c.label}</span>
+                  <span className="font-mono text-[10px] text-slate-400">{Math.round(c.confidence * 100)}% Conf</span>
+                </div>
+                <p className="text-[11px] text-slate-300">{c.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Table */}
       <div className="overflow-x-auto">
