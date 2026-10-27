@@ -64,6 +64,10 @@ export const api = {
     method: 'POST',
     body: JSON.stringify(data)
   }),
+  searchLocation: (data) => request('/search/location', {
+    method: 'POST',
+    body: JSON.stringify(data)
+  }),
   searchDarkWeb: (data) => request('/search/darkweb', {
     method: 'POST',
     body: JSON.stringify(data)
@@ -106,7 +110,20 @@ export const api = {
   // Audit Logs
   getAuditLogs: () => request('/audit'),
 
-  // AI Intelligence Copilot
+  // Real Artificial Intelligence Copilot & Vision
+  getAiStatus: () => request('/ai/status'),
+  configureAi: (data) => request('/ai/configure', {
+    method: 'POST',
+    body: JSON.stringify(data)
+  }),
+  chatWithAi: (data) => request('/ai/chat', {
+    method: 'POST',
+    body: JSON.stringify(data)
+  }),
+  analyzeImageAi: (data) => request('/ai/analyze-image', {
+    method: 'POST',
+    body: JSON.stringify(data)
+  }),
   draftAINarrative: (findings, caseInfo, templateType = 'technical_report') => request('/ai/draft-narrative', {
     method: 'POST',
     body: JSON.stringify({ findings, case_info: caseInfo, template_type: templateType })

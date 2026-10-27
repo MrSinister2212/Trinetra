@@ -13,6 +13,7 @@ from app.schemas import (
     EmailDomainSearchRequest,
     PhoneSearchRequest,
     ImageSearchRequest,
+    LocationSearchRequest,
     DarkWebSearchRequest
 )
 
@@ -20,6 +21,7 @@ from app.modules.username import UsernameModule
 from app.modules.email_domain import EmailDomainModule
 from app.modules.phone import PhoneModule
 from app.modules.image import ImageModule
+from app.modules.location import LocationModule
 from app.modules.darkweb import DarkWebModule
 
 router = APIRouter(prefix="/search", tags=["OSINT Search Modules"])
@@ -29,6 +31,7 @@ username_mod = UsernameModule()
 email_domain_mod = EmailDomainModule()
 phone_mod = PhoneModule()
 image_mod = ImageModule()
+location_mod = LocationModule()
 darkweb_mod = DarkWebModule()
 
 @router.get("/assess-risk")
@@ -172,7 +175,7 @@ async def search_image(
     client_ip = request.client.host if request.client else "127.0.0.1"
     check_rate_limit(current_user.id, req.filename or "image_upload")
 
-    findings = await image_mod.run(target=target)
+    findings = await image_mod.run(target=target, options={"filename": req.filename or "image_upload"})
 
     await record_audit_log(
         db=db,
@@ -180,6 +183,36 @@ async def search_image(
         action="search_image",
         target=req.filename or "image_investigation",
         module="image",
+        purpose=req.purpose,
+        ip_address=client_ip,
+        details={"findings_count": len(findings)}
+    )
+
+    return findings
+
+@router.post("/location", response_model=List[Finding])
+async def search_location(
+    req: LocationSearchRequest,
+    request: Request,
+    current_user: User = Depends(get_current_user),
+    db: AsyncSession = Depends(get_db)
+):
+    if not req.purpose or len(req.purpose.strip()) < 5:
+        raise HTTPException(status_code=400, detail="Mandatory investigation purpose required.")
+    if not req.lawful_confirmation:
+        raise HTTPException(status_code=400, detail="Lawful confirmation must be affirmed.")
+
+    client_ip = request.client.host if request.client else "127.0.0.1"
+    check_rate_limit(current_user.id, req.query)
+
+    findings = await location_mod.run(target=req.query)
+
+    await record_audit_log(
+        db=db,
+        user=current_user,
+        action="search_location",
+        target=req.query,
+        module="location",
         purpose=req.purpose,
         ip_address=client_ip,
         details={"findings_count": len(findings)}

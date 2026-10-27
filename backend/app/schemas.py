@@ -95,6 +95,26 @@ class ImageSearchRequest(SearchBaseRequest):
     image_base64: Optional[str] = None
     filename: Optional[str] = "investigation_target.jpg"
 
+class LocationSearchRequest(SearchBaseRequest):
+    query: str = Field(..., min_length=2, max_length=256)
+
+class AIChatRequest(BaseModel):
+    query: str = Field(..., min_length=1, max_length=3000)
+    findings: Optional[List[Dict[str, Any]]] = Field(default_factory=list)
+    case_info: Optional[Dict[str, Any]] = None
+    history: Optional[List[Dict[str, str]]] = None
+
+class AIConfigRequest(BaseModel):
+    gemini_api_key: Optional[str] = None
+    openai_api_key: Optional[str] = None
+    ollama_url: Optional[str] = None
+    preferred_model: Optional[str] = None
+
+class AIAnalyzeImageRequest(BaseModel):
+    image_base64: Optional[str] = None
+    image_url: Optional[str] = None
+    filename: Optional[str] = "image.jpg"
+
 class DarkWebSafetyGate(BaseModel):
     amnesic_os_or_isolated_vm: bool
     hardware_devices_disabled: bool

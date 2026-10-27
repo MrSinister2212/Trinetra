@@ -6,29 +6,23 @@ import httpx
 
 from app.schemas import Finding
 from app.reporting.integrity import IntegrityValidator
+from app.ai.llm_engine import ai_engine, LLMEngine
 
 class TrinetraAICopilot:
     """
-    TRINETRA AI Copilot & Automated Intelligence Synthesizer.
+    TRINETRA AI Copilot & Artificial Intelligence Synthesizer.
     
     Adheres strictly to the Defensible Evidence Doctrine:
-    1. Only synthesizes from verified/stored Finding objects.
+    1. Powered by real Artificial Intelligence: Google Gemini, OpenAI GPT-4, and Local Ollama.
     2. Every generated sentence strictly cites one or more Finding IDs: [fnd_...].
     3. Clearly separates 'Verified Facts' (2+ sources), 'Unverified Leads' (single source),
        and 'Analyst Inferences'.
     4. Never fabricates personal names, addresses, or private credentials.
-    5. Works with online LLMs (Gemini / OpenAI / Anthropic), local Ollama, or built-in deterministic OSINT NLP engine.
+    5. Fallback deterministic synthesizer available when offline.
     """
 
-    def __init__(
-        self,
-        gemini_api_key: Optional[str] = None,
-        openai_api_key: Optional[str] = None,
-        ollama_url: Optional[str] = "http://localhost:11434"
-    ):
-        self.gemini_api_key = gemini_api_key or os.getenv("GEMINI_API_KEY")
-        self.openai_api_key = openai_api_key or os.getenv("OPENAI_API_KEY")
-        self.ollama_url = ollama_url
+    def __init__(self, engine: Optional[LLMEngine] = None):
+        self.engine = engine or ai_engine
 
     async def draft_executive_summary(
         self,
@@ -38,6 +32,7 @@ class TrinetraAICopilot:
     ) -> str:
         """
         Drafts a citation-compliant executive summary where every assertion cites [fnd_id].
+        Utilizes true Artificial Intelligence LLM when available.
         """
         if not findings:
             return "No findings are currently attached to this case. Execute OSINT modules to gather evidence before generating an AI summary."
@@ -49,18 +44,47 @@ class TrinetraAICopilot:
         for f in findings:
             by_module.setdefault(f.module, []).append(f)
 
-        # 1. Try external LLM if API key is provided
-        if self.gemini_api_key:
+        # 1. Attempt True Artificial Intelligence Generation (Gemini / OpenAI / Ollama)
+        status = await self.engine.get_status()
+        if status["gemini_available"] or status["openai_available"] or status["ollama_available"]:
             try:
-                summary = await self._call_gemini_summary(findings, case_info, template_type)
-                is_valid, _ = IntegrityValidator.validate_narrative_citations(summary, {f.id for f in findings})
-                if is_valid:
+                summary = await self._generate_ai_summary(findings, case_info, template_type)
+                # Validate citation integrity
+                finding_ids = {f.id for f in findings}
+                is_valid, _ = IntegrityValidator.validate_narrative_citations(summary, finding_ids)
+                if is_valid and len(summary.strip()) > 30:
                     return summary
             except Exception:
-                pass # Fall back to built-in deterministic NLP engine
+                pass # Fall back to built-in deterministic synthesizer if API network issues occur
 
-        # 2. Deterministic, citation-enforced OSINT NLP synthesizer
+        # 2. Deterministic, citation-enforced OSINT NLP synthesizer (offline fallback)
         return self._synthesize_local_narrative(findings, verified, unverified, by_module, case_info, template_type)
+
+    async def _generate_ai_summary(self, findings: List[Finding], case_info: Dict[str, Any], template_type: str) -> str:
+        case_title = case_info.get("title", "Target OSINT Dossier")
+        finding_bullets = "\n".join([
+            f"- [{f.id}] [{f.module.upper()}] Source: {f.source} | Target: {f.target} | Evidence: {f.evidence_snippet} | Verified: {f.verified}"
+            for f in findings[:30]
+        ])
+
+        system_prompt = f"""
+You are the TRINETRA Senior OSINT Intelligence Analyst AI.
+Draft a rigorous, defensible, professional Executive Summary for Case: "{case_title}".
+
+STRICT INTEGRITY & DEFENSIBLE EVIDENCE RULES:
+1. Every single sentence MUST cite one or more Finding IDs in square brackets: e.g. [fnd_123].
+2. Do NOT invent facts, names, addresses, or phone numbers. Ground every assertion strictly in the supplied evidence findings.
+3. Clearly distinguish between verified findings (marked Verified: True) and exploratory leads.
+4. Professional tone appropriate for security researchers, fraud investigators, or court-ready forensic reports.
+"""
+        prompt = f"""
+EVIDENCE FINDINGS:
+{finding_bullets}
+
+Draft a 3-to-5 paragraph executive summary synthesizing the footprint, infrastructure, geolocation, and risk posture. Ensure every single sentence includes at least one [fnd_id] citation.
+"""
+        generated_text, provider = await self.engine.generate_text(prompt, system_prompt, max_tokens=1500)
+        return generated_text
 
     def _synthesize_local_narrative(
         self,
@@ -75,7 +99,6 @@ class TrinetraAICopilot:
         case_title = case_info.get("title", "the target subject")
 
         # Sentence 1: Scope & Primary Footprint
-        targets = list(set(f.target for f in findings))
         primary_citations = " ".join(f"[{f.id}]" for f in findings[:2])
         sentences.append(
             f"An open-source footprint assessment concerning {case_title} identified {len(findings)} digital artifacts across {len(by_module)} investigative categories {primary_citations}."
@@ -106,15 +129,23 @@ class TrinetraAICopilot:
                 f"Public telecommunication numbering plan analysis validated line allocation and geographic carrier assignment {phn_cits}."
             )
 
-        # Sentence 5: Photographic Provenance & Manipulation Triage
+        # Sentence 5: Photographic Provenance & Geolocation
         if "image" in by_module:
             img_findings = by_module["image"]
             img_cits = " ".join(f"[{f.id}]" for f in img_findings[:2])
             sentences.append(
-                f"Forensic photographic evaluation extracted technical camera metadata and evaluated error level compression variance to detect composite anomalies {img_cits}."
+                f"Forensic photographic evaluation extracted technical camera metadata, computed compression variance, and evaluated spatial geolocation indicators {img_cits}."
             )
 
-        # Sentence 6: Dark Web & Exposure Mentions
+        # Sentence 6: Location & Geointelligence
+        if "location" in by_module:
+            loc_findings = by_module["location"]
+            loc_cits = " ".join(f"[{f.id}]" for f in loc_findings[:2])
+            sentences.append(
+                f"Spatial geointelligence and telecom telemetry mapped network routing and physical coordinates via OpenStreetMap spatial ontology {loc_cits}."
+            )
+
+        # Sentence 7: Dark Web & Exposure Mentions
         if "darkweb" in by_module:
             drk_findings = by_module["darkweb"]
             drk_cits = " ".join(f"[{f.id}]" for f in drk_findings[:2])
@@ -127,7 +158,7 @@ class TrinetraAICopilot:
         unver_count = len(unverified)
         last_cit = f"[{findings[0].id}]"
         sentences.append(
-            f"Of the recorded evidence items, {ver_count} represent corroborated verified findings while {unver_count} are classified as unverified investigative leads {last_cit}."
+            f"Of the recorded evidence items, {ver_count} represent corroborated verified findings while {unver_count} are classified as exploratory leads {last_cit}."
         )
 
         return " ".join(sentences)
@@ -166,15 +197,15 @@ class TrinetraAICopilot:
                 })
 
         # 3. EXIF metadata & Geographic Alignment
-        image_findings = [f for f in findings if f.module == "image" and f.raw_metadata.get("gps")]
+        geo_findings = [f for f in findings if f.module in ["image", "location"] and f.raw_metadata.get("latitude")]
         phone_findings = [f for f in findings if f.module == "phone" and f.raw_metadata.get("geo_region")]
-        if image_findings and phone_findings:
+        if geo_findings and phone_findings:
             correlations.append({
                 "type": "geographic_coherence",
-                "confidence": 0.78,
+                "confidence": 0.85,
                 "label": "Geographic Telemetry Convergence",
-                "description": "Image GPS coordinates and phone carrier numbering allocations corroborate regional consistency.",
-                "evidence_finding_ids": [image_findings[0].id, phone_findings[0].id]
+                "description": "Spatial coordinate telemetry and phone carrier numbering allocations corroborate regional consistency.",
+                "evidence_finding_ids": [geo_findings[0].id, phone_findings[0].id]
             })
 
         # 4. Exposure Severity Evaluation
@@ -191,28 +222,3 @@ class TrinetraAICopilot:
             "overall_exposure_risk": severity,
             "correlations": correlations
         }
-
-    async def _call_gemini_summary(self, findings: List[Finding], case_info: Dict[str, Any], template_type: str) -> str:
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={self.gemini_api_key}"
-        finding_bullets = "\n".join([f"- [{f.id}] Source: {f.source}, Target: {f.target}, Snippet: {f.evidence_snippet}" for f in findings[:25]])
-
-        prompt = f"""
-You are the TRINETRA OSINT Intelligence Analyst AI.
-Draft a professional, defensible Executive Summary for Case: {case_info.get('title', 'OSINT Dossier')}.
-
-MANDATORY INTEGRITY RULES:
-1. Every single sentence MUST cite one or more Finding IDs from the evidence list in square brackets: e.g. [fnd_123].
-2. Do NOT invent any facts, names, phone numbers, or addresses. Use ONLY the supplied evidence.
-3. Clearly distinguish verified findings from unverified leads.
-
-EVIDENCE FINDINGS:
-{finding_bullets}
-"""
-        async with httpx.AsyncClient(timeout=10.0) as client:
-            resp = await client.post(url, json={
-                "contents": [{"parts": [{"text": prompt}]}]
-            })
-            if resp.status_code == 200:
-                data = resp.json()
-                return data["candidates"][0]["content"]["parts"][0]["text"].strip()
-            raise RuntimeError("Gemini API call failed")

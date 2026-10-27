@@ -1,12 +1,13 @@
 import React from 'react';
-import { UserSearch, Mail, Phone, Image as ImageIcon, Skull, Network, Briefcase, History } from 'lucide-react';
+import { UserSearch, Mail, Phone, Image as ImageIcon, MapPin, Skull, Sparkles, Network, Briefcase, History } from 'lucide-react';
 
 export default function ModuleSelector({ activeModule, onSelectModule, darkWebUnlocked }) {
   const modules = [
     { id: 'username', label: 'Username Search', icon: UserSearch, badge: '500+ Sites' },
     { id: 'email_domain', label: 'Email & Domain', icon: Mail, badge: 'MX/HIBP/CT' },
     { id: 'phone', label: 'Phone Footprint', icon: Phone, badge: 'Public E.164' },
-    { id: 'image', label: 'Image Provenance', icon: ImageIcon, badge: 'EXIF / ELA' },
+    { id: 'image', label: 'Image Provenance', icon: ImageIcon, badge: 'EXIF / GPS / AI' },
+    { id: 'location', label: 'Location & Geo', icon: MapPin, badge: 'IP / OSM / BGP' },
     {
       id: 'darkweb',
       label: 'Dark Web Search',
@@ -14,6 +15,7 @@ export default function ModuleSelector({ activeModule, onSelectModule, darkWebUn
       badge: darkWebUnlocked ? 'UNLOCKED' : 'GATED',
       isGated: true
     },
+    { id: 'ai_copilot', label: 'AI Copilot', icon: Sparkles, badge: 'Neural AI' },
     { id: 'graph', label: 'Link Graph', icon: Network },
     { id: 'cases', label: 'Case Dossiers', icon: Briefcase },
     { id: 'audit', label: 'Audit Trail', icon: History },

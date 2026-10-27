@@ -5,12 +5,14 @@ import UsernameSearch from './components/UsernameSearch';
 import EmailDomainSearch from './components/EmailDomainSearch';
 import PhoneSearch from './components/PhoneSearch';
 import ImageSearch from './components/ImageSearch';
+import LocationSearch from './components/LocationSearch';
 import DarkWebSearch from './components/DarkWebSearch';
 import DarkWebGateModal from './components/DarkWebGateModal';
 import FindingsTable from './components/FindingsTable';
 import CaseManager from './components/CaseManager';
 import LinkGraphView from './components/LinkGraphView';
 import AuditLogView from './components/AuditLogView';
+import AiCopilotPanel from './components/AiCopilotPanel';
 import ReportBuilderModal from './components/ReportBuilderModal';
 import { api, setAuthToken } from './api';
 import { ShieldCheck, CheckCircle2, AlertCircle } from 'lucide-react';
@@ -156,12 +158,20 @@ export default function App() {
             <ImageSearch onResults={handleSearchResults} />
           )}
 
+          {activeModule === 'location' && (
+            <LocationSearch onResults={handleSearchResults} />
+          )}
+
           {activeModule === 'darkweb' && (
             <DarkWebSearch
               onResults={handleSearchResults}
               safetyGateData={darkWebSafetyData}
               onOpenGateModal={() => setShowGateModal(true)}
             />
+          )}
+
+          {activeModule === 'ai_copilot' && (
+            <AiCopilotPanel findings={activeCase?.findings?.length ? activeCase.findings : allFindings} activeCase={activeCase} />
           )}
 
           {activeModule === 'graph' && (
@@ -187,7 +197,7 @@ export default function App() {
         </div>
 
         {/* Findings Table Section (Always available when search modules are active) */}
-        {!['graph', 'cases', 'audit'].includes(activeModule) && (
+        {!['graph', 'cases', 'audit', 'ai_copilot'].includes(activeModule) && (
           <div className="pt-2">
             <div className="flex items-center justify-between mb-3">
               <h3 className="text-sm font-bold text-slate-200">

@@ -68,6 +68,8 @@ def build_exe():
         "bcrypt",
         "app.routes.ai_routes",
         "app.ai.copilot",
+        "app.ai.llm_engine",
+        "app.modules.location",
     ]
 
     cmd = [
