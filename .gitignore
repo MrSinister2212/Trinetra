@@ -8,3 +8,4 @@ build/
 .pytest_cache/
 trinetra.db
 .env
+TRINETRA_PORTFOLIO_AND_EVENT_BROCHURE.*
